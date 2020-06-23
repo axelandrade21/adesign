@@ -382,6 +382,13 @@ background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+
   video {
     display: none;
   }
+  
+  .heading .p {
+  
+  color: rgb(70, 65, 65);
+  font-size: 3.9vmin;
+  font-family: var(--korean2);
+}
 
   #info-1{
     height: 500px;
