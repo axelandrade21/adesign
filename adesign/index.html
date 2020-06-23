@@ -96,6 +96,10 @@
 
     <section class="section_2 container-fluid">
       <div class="d-flex flex-column text-center">
+        <div>
+          <h1 id="building"></h1>
+        </div>
+        <div>
         <!-- <div>
           <h1>Features</h1>
         </div>
@@ -361,6 +365,12 @@
     <script type="text/javascript">
     const instance = new Typewriter('#korean', {
       strings: ['뜻이 있는 <br> 곳에 길이 있다', 'Donde hay voluntad <br> hay camino'],
+      autoStart: true,
+      loop: true
+    });
+      
+      const instance2 = new Typewriter('#building', {
+      strings: ['EN CONSTRUCCIÓN'],
       autoStart: true,
       loop: true
     });
