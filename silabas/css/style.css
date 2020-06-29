@@ -1,3 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#contenedor-cards {
+  flex: 1 0 auto;
+  padding: 20px;
+}
 
 
 
@@ -21,8 +33,12 @@ body::-webkit-scrollbar-thumb {
 
 	body{
 		background: #83a4d4;  /* fallback for old browsers */
+		 margin: 0;
 
+	}
 
+	#box-m{
+		display: none;
 	}
 
 	#contenedor-cards{
@@ -80,10 +96,13 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 	.section_6 {
   padding: 5vmin 2vmin;
+
 }
 
 .section_6 .footer {
   padding: 0 10vmin;
+  position: absolute; bottom: 0;
+  width: 100%;
 }
 .section_6 .footer label {
   font-size: 1.8em;
@@ -122,19 +141,25 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.2;
     margin: 2px;
 }
-
- 	
 	body{
 		background: #83a4d4;  /* fallback for old browsers */
 		min-width: 412px;
-
+		
 	}
 
+	#contenedor-cards {
+	  flex: 1 0 auto;
+	  padding: 5px;
+	}
+
+	
+	
 	#contenedor-cards #columna{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin:1%;
+
 	}
 
 	.card{
@@ -159,13 +184,7 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 		border-radius: 50%;
 	}
 
-	footer{
-		margin-top: 5%;
-		background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	}
+	
 
 	label{
 		color: white;
@@ -173,10 +192,15 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 
 	.section_6 {
   padding: 8vmin 2vmin;
+
 }
 
 .section_6 .footer {
   padding: 0 10vmin;
+  position: absolute; bottom: 0;
+  width: 100%;
+
+  
 }
 .section_6 .footer label {
   font-size: 1.8em;
@@ -196,6 +220,9 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
   font-size: 1em;
   color: white;
 }
+
+
+
 
 
  }
