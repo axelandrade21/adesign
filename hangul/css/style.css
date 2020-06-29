@@ -33,8 +33,12 @@ body::-webkit-scrollbar-thumb {
 
 	body{
 		background: #83a4d4;  /* fallback for old browsers */
+		 margin: 0;
 
+	}
 
+	#box-m{
+		display: none;
 	}
 
 	#contenedor-cards{
@@ -65,7 +69,8 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 
 
 	.card{
-		width: 14rem;
+		width: 10rem;
+		height: 8rem;
 		margin-left: 5px;
 		border-radius: 10%;
 	}
@@ -74,14 +79,8 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 		width: 20%;
 	}
 
-	audio{
-		/*filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);*/
-		width: 50%;
-		
-	}
-
 	h1{
-		font-size: 7em;
+		font-size: 3em;
 	}
 
 	footer{
@@ -95,6 +94,34 @@ background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+
 		color: white;
 	}
 
+	.section_6 {
+  padding: 5vmin 2vmin;
+
+}
+
+.section_6 .footer {
+  padding: 0 10vmin;
+  position: absolute; bottom: 0;
+  width: 100%;
+}
+.section_6 .footer label {
+  font-size: 1.8em;
+  color: whitesmoke;
+}
+
+.section_6 .footer ul li {
+  color: #d3d0cb;
+  font-size: 1em;
+}
+
+.copyrights,
+.copyrights p {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #d3d0cb;
+  font-size: 1em;
+  color: white;
+}
  }
 
  @media (min-width: 412px) and (max-width: 768px) { 
@@ -114,19 +141,25 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.2;
     margin: 2px;
 }
-
- 	
 	body{
 		background: #83a4d4;  /* fallback for old browsers */
 		min-width: 412px;
-
+		
 	}
 
+	#contenedor-cards {
+	  flex: 1 0 auto;
+	  padding: 5px;
+	}
+
+	
+	
 	#contenedor-cards #columna{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin:1%;
+
 	}
 
 	.card{
@@ -151,17 +184,45 @@ background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, F
 		border-radius: 50%;
 	}
 
-	footer{
-		margin-top: 5%;
-		background: #0f0c29;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	}
+	
 
 	label{
 		color: white;
 	}
+
+	.section_6 {
+  padding: 8vmin 2vmin;
+
+}
+
+.section_6 .footer {
+  padding: 0 10vmin;
+  position: absolute; bottom: 0;
+  width: 100%;
+
+  
+}
+.section_6 .footer label {
+  font-size: 1.8em;
+  color: whitesmoke;
+}
+
+.section_6 .footer ul li {
+  color: #d3d0cb;
+  font-size: 1em;
+}
+
+.copyrights,
+.copyrights p {
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #d3d0cb;
+  font-size: 1em;
+  color: white;
+}
+
+
+
 
 
  }
