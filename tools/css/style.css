@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+body{
+	background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body::-webkit-scrollbar {
+  width: 16px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+	
+  background-color: yellow;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+    opacity: 0.2;
+    margin: 2px;
+}
+
+h3,h5{
+	font-family: 'Passion One', cursive;
+	color: white;
+	text-shadow: 2px 2px #ff0000;
+}
+
+.tool-box{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+
+}
+
+
+#tool{
+	width: 100px;
+	height: 100px;
+	background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 10px;
+}
+
+#tool:hover{
+	display: inline-block;
+  
+
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+
+#tool a{
+	text-decoration: none;
+}
+
+
+
+#content{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#content img{
+	width: 30px;
+	height: 30px;
+	margin-top: 15px;
+}
+
+#content h6{
+	margin-top: 5px;
+	color: white;
+	font-family: 'Passion One', cursive;
+}
