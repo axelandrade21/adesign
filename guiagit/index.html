@@ -1,0 +1,89 @@
+<!doctype html>
+
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Guía Git</title>
+    <meta name="description" content="Explore impress.js in 3D" />
+    <meta name="author" content="Henrik Ingo" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    <link href="css/3D-rotations.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Tu navegador<b>no soporta las características brindadas</b> por impress.js, así que estás usando una versión simplificada de este sitio.</p>
+    <p>Se recomienda usar <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b> para una mejor experiencia.</p>
+</div>
+
+<div id="impress" data-transition-duration="2000">
+
+
+    <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
+        <center>
+          <br><br>
+           <h1>GUÍA</h1>
+           <img src="img/logo.png" width="500" height="200">
+         </center>
+    </div>
+    <div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
+
+      <div class="card">
+        <div class="card-body">
+           <p> <b>Git</b> es una herramienta que <b>realiza una función del control de versiones de código de forma distribuida.</b> Con ella vamos a <b>poder controlar todos los cambios que se hacen en nuestra aplicación y en nuestro código</b> y vamos a tener control absoluto de todo lo que pasa en el código, pudiendo volver atrás en el tiempo, pudiendo abrir diferentes ramas de desarrollo, etc.</p>
+        </div>
+      </div>
+      <br>
+      <div class="card  mb-7">
+        <div class="card-body">
+           <p> Recordemos cuando jugamos algun video juego y cada cierto tiempo podemos grabar hasta donde llegamos, o se graba cuando se cumple una meta. Cada vez que grabamos, guardamos una “versión” de nuestro juego, para no iniciar desde el principio, y poder continuar en algun otro momento donde nos quedamos. En algunos juegos podemos “gestionar” y regresar a cualquier punto o “versión” del pasado donde hayamos grabado nuestro juego. Eso es un control de versiones.</p>
+        </div>
+      </div>
+         
+    </div>
+
+    <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
+         data-goto-prev="step-8">
+        <p>Slide one</p>
+    </div>
+
+    <div id="step-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+        <p>Slide two</p>
+    </div>
+
+    <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
+        <p>Slide three</p>
+    </div>
+
+    <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
+        <p>Slide four</p>
+    </div>
+
+    <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
+        <p>Slide five</p>
+    </div>
+
+    <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
+        <p>Slide six</p>
+    </div>
+
+    <div id="step-7" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
+        <p>Slide seven</p>
+    </div>
+
+    <div id="step-8" class="step" data-x="379" data-y="-70" data-z="270" data-rotate-z="45" data-rotate-y="-315" data-rotate-order="zyx"
+         data-goto-next="step-1">
+        <p>Slide eight</p>
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+<div id="impress-help"></div>
+
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
