@@ -10,6 +10,10 @@
     <link href="css/impress-common.css" rel="stylesheet" />
     <link href="css/3D-rotations.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
 </head>
 
 <body class="impress-not-supported">
@@ -21,14 +25,14 @@
 <div id="impress" data-transition-duration="2000">
 
 
-    <div id="overview" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
+    <div id="Intro" class="step overview" data-x="1350" data-y="100" data-z="100" data-scale="3" data-rotate-y="90">
         <center>
           <br><br>
            <h1>GUÍA</h1>
            <img src="img/logo.png" width="500" height="200">
          </center>
     </div>
-    <div id="overview2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
+    <div id="Intro2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
 
       <div class="card">
         <div class="card-body">
@@ -44,13 +48,34 @@
          
     </div>
 
-    <div id="step-1" class="step" data-x="0" data-y="0" data-z="0"
+    <div id="Crear-repositorio" class="step" data-x="0" data-y="0" data-z="0"
          data-goto-prev="step-8">
-        <p>Slide one</p>
+         
+        <center>
+
+            <h1>Crear un repositorio</h1>
+            <img src="img/repo.png" height="100" width="100" style="margin-top: 10%; animation: tada 10s infinite;">
+            <div style="margin-top: 20%;"></div>
+          <h4 >Para crear un repositorio <b>nuevo</b> solamente ejecuta en consola:</h4>
+            <span id="crearrepo" class="comandos"></span>
+            <br>
+
+
+        </center>
     </div>
 
-    <div id="step-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
-        <p>Slide two</p>
+    <div id="Clonar-repositorio" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+        <center>
+
+            <h1>Clonar un repositorio local y remoto</h1>
+            <img src="img/clonar.gif" style="width: 60%;margin-top: 10%; animation: tada 10s infinite;">
+            <div style="margin-top: 10%;"></div>
+          <h4 >Para crear una <b>copia local o remota del repositorio</b> solamente ejecuta en consola:</h4>
+            <span id="clonar" class="comandos" style="font-size: 60px;"></span>
+            <br>
+
+
+        </center>
     </div>
 
     <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
@@ -84,6 +109,35 @@
 
 <script type="text/javascript" src="js/impress.js"></script>
 <script>impress().init();</script>
+
+<script src="js/typewriterjs/dist/core.js"></script>
+    <script type="text/javascript">
+    const instance = new Typewriter('#crearrepo', {
+      strings: ['git init'],
+      autoStart: true,
+      loop: true
+    });
+
+    const instance2 = new Typewriter('#clonar', {
+      strings: ['git clone URL', 'git clone /ruta/del/repositorio'],
+      autoStart: true,
+      loop: true
+    });
+
+
+    
+    
+
+   
+
+
+  </script>
+
+  <script type="text/javascript">
+    
+
+
+  </script>
 
 </body>
 </html>
