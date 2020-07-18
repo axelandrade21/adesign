@@ -34,17 +34,15 @@
     </div>
     <div id="Intro2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
 
-      <div class="card">
-        <div class="card-body">
-           <p> <b>Git</b> es una herramienta que <b>realiza una función del control de versiones de código de forma distribuida.</b> Con ella vamos a <b>poder controlar todos los cambios que se hacen en nuestra aplicación y en nuestro código</b> y vamos a tener control absoluto de todo lo que pasa en el código, pudiendo volver atrás en el tiempo, pudiendo abrir diferentes ramas de desarrollo, etc.</p>
-        </div>
-      </div>
-      <br>
-      <div class="card  mb-7">
-        <div class="card-body">
-           <p> Recordemos cuando jugamos algun video juego y cada cierto tiempo podemos grabar hasta donde llegamos, o se graba cuando se cumple una meta. Cada vez que grabamos, guardamos una “versión” de nuestro juego, para no iniciar desde el principio, y poder continuar en algun otro momento donde nos quedamos. En algunos juegos podemos “gestionar” y regresar a cualquier punto o “versión” del pasado donde hayamos grabado nuestro juego. Eso es un control de versiones.</p>
-        </div>
-      </div>
+      <p> <b>Git</b> tiene un flujo con 3 estados: </p>
+           <ul>
+             <li><b>Directorio de trabajo: </b> Aquí es donde trabajas con tus archivos.</li>
+             <li><b>Staging area:</b> Aquí agregas tus archivos manipulados y los preparas para su guardado, es un intermediario.</li>
+             <li><b>Repositorio: </b> Una vez que decidas hacer los cambios, estos archivos pasarán aquí. </li>
+           </ul>
+
+      
+      <center> <img src="img/flow.gif" style="border-radius: 10%;"> </center>
          
     </div>
 
@@ -64,6 +62,22 @@
         </center>
     </div>
 
+    
+
+    <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
+        <center>
+
+            <h1>Estado</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para ver el estado <b> del repositorio</b> solamente ejecuta en consola:</h4>
+            <span id="status" class="comandos" ></span>
+            <br>
+
+
+        </center>
+    </div>
+
     <div id="Clonar-repositorio" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
         <center>
 
@@ -71,23 +85,37 @@
             <img src="img/clonar.gif" style="width: 60%;margin-top: 10%; animation: tada 10s infinite;">
             <div style="margin-top: 10%;"></div>
           <h4 >Para crear una <b>copia local o remota del repositorio</b> solamente ejecuta en consola:</h4>
-            <span id="clonar" class="comandos" style="font-size: 60px;"></span>
+            <span id="clonar" class="comandos" style="font-size: 45px;"></span>
             <br>
 
 
         </center>
     </div>
 
-    <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
-        <p>Slide three</p>
-    </div>
-
     <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
-        <p>Slide four</p>
+        <center>
+
+            <h1>Agregar</h1>
+            <div style="margin-top: 20%;"></div>
+          <h4 >Para agregar un <b>archivo al staging area</b> solamente ejecuta en consola:</h4>
+            <span id="add" class="comandos" ></span>
+            <br>
+
+
+        </center>
     </div>
 
     <div id="step-5" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
-        <p>Slide five</p>
+        <center>
+
+            <h1>Commit</h1>
+            <div style="margin-top: 20%;"></div>
+          <h4 >Para crear un <b>primer punto de control sobre cambios hechos</b> solamente ejecuta en consola:</h4>
+            <span id="commit" class="comandos" style="font-size: 65px;" ></span>
+            <br>
+
+
+        </center>
     </div>
 
     <div id="step-6" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
@@ -123,6 +151,26 @@
       autoStart: true,
       loop: true
     });
+
+    const instance3 = new Typewriter('#status', {
+      strings: ['git status'],
+      autoStart: true,
+      loop: true
+    });
+
+     const instance4 = new Typewriter('#add', {
+      strings: ['git add archivo'],
+      autoStart: true,
+      loop: true
+    });
+
+     const instance5 = new Typewriter('#commit', {
+      strings: ['git commit -m "mensaje"'],
+      autoStart: true,
+      loop: true
+    });
+
+
 
 
     
