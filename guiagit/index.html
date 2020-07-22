@@ -31,6 +31,8 @@
            <h1>GUÍA</h1>
            <img src="img/logo.png" width="500" height="200">
          </center>
+         
+         <h4 style="text-align: center; font-size: 20px; margin-top: 15px;">Creado por Axel Andrade</h4>
     </div>
     <div id="Intro2" class="step overview" data-x="2018" data-y="106" data-z="3018" data-scale="2">
 
@@ -98,7 +100,22 @@
             <h1>Agregar</h1>
             <div style="margin-top: 20%;"></div>
           <h4 >Para agregar un <b>archivo al staging area</b> solamente ejecuta en consola:</h4>
+          <br>
             <span id="add" class="comandos" ></span>
+            <br>
+
+
+        </center>
+    </div>
+
+     <div id="Borrar-archivo" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
+        <center>
+
+            <h1>Borrar archivo</h1>
+            <div style="margin-top: 20%;"></div>
+          <h4 >Para borrar un <b>archivo </b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="delete" class="comandos" style="font-size: 55px;" ></span>
             <br>
 
 
@@ -223,6 +240,96 @@
         </center>
     </div>
 
+    <div id="Borrar-rama" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
+        <center>
+
+            <h1>Borrar rama</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>borrar una rama</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="branchd" class="comandos" style="font-size: 55px;"></span>
+            <br>
+
+
+        </center>
+    </div>
+
+     <div id="Fusionar-ramas" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
+        <center>
+
+            <h1>Fusionar ramas</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>fusionar cambios de otra rama</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="merge" class="comandos" style="font-size: 55px;"></span>
+            <br>
+
+
+        </center>
+    </div>
+
+     <div id="Cambios-entre-ramas" class="step" data-x="379" data-y="780" data-z="270" data-rotate-z="135" data-rotate-y="-225" data-rotate-order="zyx">
+        <center>
+
+            <h1>Ver cambios entre ramas</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>ver cambios entre dos ramas</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="diff-branch" class="comandos" style="font-size: 45px;"></span>
+            <br>
+
+
+        </center>
+    </div>
+
+
+    <div id="Enviar-cambios-repositorio-remoto" class="step" data-x="700" data-y="350" data-z="350" data-rotate-z="90" data-rotate-y="-270" data-rotate-order="zyx">
+        <center>
+
+            <h1>Enviar cambios a repositorio remoto</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>enviar cambios a repositorio remoto</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="push" class="comandos" style="font-size: 55px;"></span>
+            <br>
+
+
+        </center>
+    </div>
+
+    <div id="Enviar-rama-repositorio-remoto" class="step" data-x="0" data-y="702" data-z="0" data-rotate-z="180" data-rotate-y="-180" data-rotate-order="zyx">
+        <center>
+
+            <h1>Enviar rama a repositorio remoto</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>enviar rama a repositorio remoto</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="push-branch" class="comandos" style="font-size: 45px;"></span>
+            <br>
+
+
+        </center>
+    </div>
+
+    <div id="Traer-cambios-repositorio-local" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
+        <center>
+
+            <h1>Traer cambios a repositorio local</h1>
+            
+            <div style="margin-top: 30%;"></div>
+          <h4 >Para <b>actualizar cambios del repositorio remoto al local</b> solamente ejecuta en consola:</h4>
+          <br>
+            <span id="pull" class="comandos" style="font-size: 55px;"></span>
+            <br>
+
+
+        </center>
+    </div>
 
 </div>
 
@@ -306,6 +413,50 @@
       autoStart: true,
       loop: true
     });
+
+       const instance13 = new Typewriter('#branchd', {
+      strings: ['git branch -d nombreRama'],
+      autoStart: true,
+      loop: true
+    });
+
+         const instance14 = new Typewriter('#merge', {
+      strings: ['git merge nombreRama'],
+      autoStart: true,
+      loop: true
+    });
+
+
+         const instance15 = new Typewriter('#diff-branch', {
+      strings: ['git diff ramaOrigen ramaObjetivo'],
+      autoStart: true,
+      loop: true
+    });
+
+            const instance16 = new Typewriter('#push', {
+      strings: ['git push'],
+      autoStart: true,
+      loop: true
+    });
+
+        const instance17 = new Typewriter('#push-branch', {
+      strings: ['git push origin nombreRama'],
+      autoStart: true,
+      loop: true
+    });
+
+        const instance18 = new Typewriter('#pull', {
+      strings: ['git pull'],
+      autoStart: true,
+      loop: true
+    });
+
+        const instance19 = new Typewriter('#delete', {
+      strings: ['git rm nombreArchivo'],
+      autoStart: true,
+      loop: true
+    });
+
 
 
 
