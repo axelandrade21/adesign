@@ -342,11 +342,11 @@
       <!-- /row -->
       <div class="row content-row">
         <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-2"><img id="aboutme" src="img/cr.png" height="100" width="100" alt=""></div>
-        <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/lang.png" height="70" width="70" alt=""></div>
-        <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/guitar.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/music.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/drawing.png" height="70" width="70" alt=""></div>
+        <div class="pais col-12 col-sm-2 "><img id="aboutme" src="img/cr.png" height="100" width="100" alt=""></div>
+        <div class="idiomas col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/lang.png" height="70" width="70" alt=""></div>
+        <div class="guitarra col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/guitar.png" height="70" width="70" alt=""></div>
+         <div class="musica col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/music.png" height="70" width="70" alt=""></div>
+         <div class="dibujar col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/drawing.png" height="70" width="70" alt=""></div>
 
 
         
@@ -355,11 +355,11 @@
       <!-- /row -->
       <div class="row content-row">
         <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/reading.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/ball.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/game.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/cat.png" height="70" width="70" alt=""></div>
-         <div class="col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/web.png" height="70" width="70" alt=""></div>
+         <div class="leer col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/reading.png" height="70" width="70" alt=""></div>
+         <div class="futbol col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/ball.png" height="70" width="70" alt=""></div>
+         <div class="juego col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/game.png" height="70" width="70" alt=""></div>
+         <div class="gato col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/cat.png" height="70" width="70" alt=""></div>
+         <div class="d-web col-12 col-sm-2"><img id="aboutme" style="margin-top: 12px;" src="img/web.png" height="70" width="70" alt=""></div>
     </div>
 
 
@@ -612,6 +612,46 @@ main();
 
      
     </script>
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script type="text/javascript">
+   tippy('.pais', {
+        content: '¡Soy de Costa Rica! ¡Pura vida!',
+      });
+
+   tippy('.idiomas', {
+        content: 'Sé un poco de inglés, me gusta el idioma japonés y el coreano.',
+      });
+   
+   tippy('.guitarra', {
+        content: 'Sé tocar la guitarra',
+      });
+
+   tippy('.musica', {
+        content: 'Me gusta escuchar música',
+      });
+   tippy('.dibujar', {
+        content: 'Me gusta dibujar',
+      });
+   tippy('.leer', {
+        content: 'Me gusta leer',
+      });
+   tippy('.futbol', {
+        content: 'Me gusta el futbol',
+      });
+   tippy('.juego', {
+        content: 'A veces juego',
+      });
+   tippy('.gato', {
+        content: 'Me gustan los gatos!!',
+      });
+   tippy('.d-web', {
+        content: 'Uno de mis hobbies es el diseño web y jugar un poco con esto :)',
+      });
+
+
+</script>
 
 
   
