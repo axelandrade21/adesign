@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8">
+
+<script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="./js/three.min.js"></script>
+<script type="text/javascript" src="./js/jquery.onebook3d-2.33.js?2"></script>
+
+
+<script>
+
+$(function(){
+
+	var arr = [];
+
+	arr[0] = [
+		'consonantes/1.png',
+		'consonantes/2.png',
+		'consonantes/3.png',
+		'consonantes/4.png',
+		'consonantes/5.png',
+		'consonantes/6.png',
+		'consonantes/7.png',
+		'consonantes/8.png',
+		'consonantes/9.png',
+		'consonantes/10.png',
+		'consonantes/11.png',
+		'consonantes/12.png',
+		'consonantes/13.png',
+		'consonantes/14.png',
+		'consonantes/15.png',
+		'consonantes/16.png',
+		'consonantes/17.png',
+		'consonantes/18.png',
+		'consonantes/19.png',
+		'consonantes/20.png'
+		  
+		
+		];	
+			
+	
+	
+	$('#photobook').onebook(arr[0]);
+
+
+	$('#book-links a').each(function(i){
+		$(this).on('click',function(){
+
+			if(arr&&arr[i]){
+				$('#photobook').onebook(arr[i]);		
+			};
+
+			return false;		
+		});
+	});
+
+
+
+		
+});
+
+
+</script>
+
+
+<style>
+html,body{width:100%;margin:0px;padding:0px;background:#e0604a url('./i/bg4.jpg');color:#000000;min-width:800px;}
+body * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.links a:link,.links a:visited{color:black;text-decoration:none;font:20px sans-serif;}
+.links a:hover{color:black;text-decoration:underline;}
+
+
+.red-filled {background:#e0604a;border:1px solid #ffc30d;}
+.blue {background:#67BCCF;}
+
+.section {width:900px;border-radius:10px; margin:50px auto;}
+.section p{text-align:center;margin:0px;padding:20px;font:16px sans-serif;line-height:140%;}
+.section p strong {color:gold;}
+
+.section-list {width:900px;border-radius:10px;margin:50px auto;}
+
+.address{margin:0px auto 50px auto;padding:0px;width:800px;text-align:center;}
+.address, .address a{font:16px arial, sans-serif;color:black;}
+
+#book-links {text-align: center;padding: 10px;color: white;}
+#book-links a:link, #book-links a:visited {color: white;font:24px sans-serif;text-decoration: none;}
+#book-links a:hover {text-decoration: underline;}
+
+</style>
+
+</head>
+<body>
+	
+
+<div class="section red">
+<div style="padding:30px;">
+	<div id="photobook" style="height:450px;"></div> 
+</div>
+
+	<center>
+		<a href="vocales.html">Vocales</a> <a href="consonantes.html">Consonantes</a>	
+	</center>
+	
+
+</div>
+
+
+
+
+</body>
+</html>
