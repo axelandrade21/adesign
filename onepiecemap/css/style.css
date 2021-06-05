@@ -6,12 +6,14 @@
 html {
     box-sizing: border-box;
     
-    background-image: url(../img/back4.jpg);
+    background-image: url(../img/back5.jpg);
     
     background-position-x: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    
     
 }
+
 
   
   *,
