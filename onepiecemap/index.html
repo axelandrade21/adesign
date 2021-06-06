@@ -46,11 +46,13 @@
     <hr>
     <!-- <div id="separador" style="margin-top: 1rem; margin-bottom: 1rem; height: 3rem; background-image: url(img/rope.png); width: 100%; background-size: cover; background-position: center;"></div> -->
 
-    <div id="info" style="justify-content: center; align-items: center;">
-        <div  style="order: 1; width: 100%; border-radius: 2rem;">
+    <div id="info" style="justify-content: center; align-items: center; padding-left: 4%; padding-right: 4%; ">
+        <div  style="order: 1; width: 100%; border-radius: 2rem; background-image: url(img/red.png); background-size: cover; background-blend-mode: soft-light;
+        ">
             <div id="robin2" data-depth="0.1">
                 <img id="robin" class="robin animate__animated animate__backInLeft animate__delay-3s" style=" width: 30%;" src="img/robin.png" alt="">
                 <!-- <img src="img/robin.png" style="width: 30%;" alt=""> -->
+                
             </div> 
             
         </div>
@@ -2760,9 +2762,9 @@
 // });
     </script>
 <script>
-    new jBox('Mouse', {
+    new jBox('Tooltip', {
            attach: '#robin',
-           content: '<center>Bienvenid@, para usar el mapa puedes hacer zoom presionando los botones <br> o acercarlo desde tu dispositivo móvil. Puedes presionar sobre la isla para ver más información y personajes.</center>',
+           content: '<center>Bienvenid@, según el Poneglyph para usar el mapa puedes hacer zoom presionando los <br> botones o acercarlo desde tu dispositivo móvil. Puedes presionar sobre la isla para ver más <br> información y personajes.</center>',
            position: {
                    x: 'right'
            },
