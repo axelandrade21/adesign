@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/islas.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 
-<body>
+<body >
 
     
     <!-- BOTONES -->
@@ -37,13 +38,33 @@
     <a id="link-botones" class="baratie" href="islas/7-baratie.html" rel="modal:open"></a>
 
     <section>
-        <div class="container animate__animated animate__slideInDown animate__delay-2s">
-            <div class="map"></div>
+        <div class="container " >
+            <div  class="map"></div>
         </div>
     </section>
 
-    <div >
-        <img class="animate__animated animate__backInLeft animate__delay-3s" style="position: absolute; z-index: -10000; width: 40%;" src="img/robin.png" alt="">
+    <hr>
+    <!-- <div id="separador" style="margin-top: 1rem; margin-bottom: 1rem; height: 3rem; background-image: url(img/rope.png); width: 100%; background-size: cover; background-position: center;"></div> -->
+
+    <div id="info" style="justify-content: center; align-items: center;">
+        <div  style="order: 1; width: 100%; border-radius: 2rem;">
+            <div id="robin2" data-depth="0.1">
+                <img id="robin" class="robin animate__animated animate__backInLeft animate__delay-3s" style=" width: 30%;" src="img/robin.png" alt="">
+                <!-- <img src="img/robin.png" style="width: 30%;" alt=""> -->
+            </div> 
+            
+        </div>
+        
+    </div>
+
+    
+
+    <div id="loader-wrapper">
+        <div id="loader"><img src="img/logo.png" alt=""></div>
+        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
     </div>
 
 
@@ -2738,6 +2759,34 @@
 //     });
 // });
     </script>
+<script>
+    new jBox('Mouse', {
+           attach: '#robin',
+           content: '<center>Bienvenid@, para usar el mapa puedes hacer zoom presionando los botones <br> o acercarlo desde tu dispositivo móvil. Puedes presionar sobre la isla para ver más información y personajes.</center>',
+           position: {
+                   x: 'right'
+           },
+   });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+    var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+</script>
+
+<script>
+    $(document).ready(function() {
+ 
+ setTimeout(function(){
+     $('body').addClass('loaded');
+     
+ }, 3000);
+
+});
+
+
+</script>
 </body>
 
 </html>
