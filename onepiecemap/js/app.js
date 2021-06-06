@@ -1,7 +1,7 @@
 // Include images
 let img_src = [
   
-  '../img/red.png'
+  'img/red.png'
 ];
 
 // Name images included
