@@ -21,8 +21,6 @@ html {
 
 
 
-  
-
 
 
 #particles-js {
@@ -37,6 +35,12 @@ html {
     
 }
 
+canvas {
+	
+    display: block;
+    
+}
+
 
 
 
@@ -46,7 +50,10 @@ html {
   *,
   *:after,
   *:before {
-    box-sizing: inherit; }
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
 
   
 
