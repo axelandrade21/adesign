@@ -4,9 +4,11 @@
 }
 
 html {
+    overflow-x: hidden;
+     border-collapse: collapse;
     box-sizing: border-box;
     width: 100%;
-    
+    min-height: 70vh;
     background-image: url(../img/wall.jpg); 
     
     background-blend-mode: screen;

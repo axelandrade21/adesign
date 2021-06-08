@@ -18,11 +18,46 @@
     <link rel="stylesheet" href="css/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/islas.css">
     <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/chardinjs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.4.0/introjs.css" integrity="sha512-i+WzzATeaDcwcfi5CfLn63qBxrKqiQvDLC+IChU1zVlaPguPgJlddOR07nU28XOoIOno9WPmJ+3ccUInpmHxBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <style type="text/css">
+ 
+    #contenedor-footer{
+        margin-top: auto;
+
+        position: relative;
+        left: -10px;
+        width: 105%;
+       
+        
+        
+    }
+
+    #contenedor-footer #scene #layer{
+
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+       
+    }
+
+    #contenedor-footer #scene #layer img{
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: -10px;
+        width: 100%;
+       
+        
+    }   
+</style>
+
 </head>
 
-<body >
-    
+<body>
+   <!--  <a class="btn btn-large btn-success" href="javascript:void(0);" onclick="empezarTour();">Show me how</a> -->
     <div id="particles-js"> </div>
     
     
@@ -72,12 +107,25 @@
         
     </div> -->
 
-    <div id="loader-wrapper">
-        <div id="loader"><img src="img/logo.png" alt=""></div>
-        
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-     
+    <!-- <div id="test"></div> -->
+
+    <!-- <p class="lead" data-step="1" data-intro="Another step.">This is the basic usage of IntroJs, with <code>data-step</code> and <code>data-intro</code> attributes.</p> -->
+
+   
+
+
+    <div id="contenedor-footer" >
+        <div id="scene">
+            
+                <div data-depth="0.1" id="layer"><img src="img/2.png"></div>
+                <div data-depth-x="0.3" id="layer"><img src="img/3.png"></div>
+                <div data-depth-x="0.2" id="layer"><img src="img/1.png" style="border-bottom: 6px solid yellow;"></div>
+         
+        </div>
+    </div>
+
+    <div style=" display: flex; justify-content: center; height: 10vh; width: 100%; background-color: black; ">
+        <h4 style="color: white;">Creado por Axel Andrade Villalobos - 2021</h4>
     </div>
 
 
@@ -975,7 +1023,8 @@
                         fill: "#000",
                        "stroke-width": 0.5,
                         "stroke-linejoin": "round",
-                        stroke: "transparent"
+                        stroke: "transparent",
+                        path: "path01"
                     },
                     text: {
                         content: "Isla Dawn",
@@ -2922,15 +2971,62 @@ var parallaxInstance = new Parallax(scene);
 
 });
 
+// $('#poneg').attr('data-intro', 'value');
+// $('#poneg').attr('data-step', '1');
+
+// $('svg [data-id=path486]').attr('data-intro', '<img style="border-radius:50%; width: 30%" src="https://i.pinimg.com/originals/c0/ea/8a/c0ea8a78b255137857b2527aec052582.png" alt="">');
+
+// $('svg [data-id=path486]').attr('data-step', '1');
+// $('svg [data-id=path448]').attr('data-intro', 'value');
+// $('svg [data-id=path448]').attr('data-step', '2');
 
 </script>
 
-<script>
-    
-</script>
+
 
 <script type='text/javascript' src='js/particles.js'></script>
   <script type='text/javascript' src='js/app.js'></script>
+  <script type="text/javascript"  src="js/chardinjs.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/3.4.0/intro.min.js"></script>
+
+  <script>
+
+    function empezarTour(){
+        $('svg [data-id=path120]').click();
+
+        setTimeout(function(){
+            introJs().setOptions({
+          
+          steps: [ {
+            element: document.querySelector('svg [data-id=path486]'),
+            intro: "Click here to login!",
+            position: 'bottom'
+          },
+          {
+            element: document.querySelector('svg [data-id=ShellsTown]'),
+            intro: "Click here to login!",
+            position: 'right'
+          }
+        
+        
+        
+        ]
+        }).start();
+     
+ }, 3000);
+     
+    }
+
+</script>
 </body>
 
 </html>
+
+ <div id="loader-wrapper">
+        <div id="loader"><img src="img/logo.png" alt=""></div>
+        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+     
+    </div>
