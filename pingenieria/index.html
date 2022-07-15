@@ -493,9 +493,12 @@ informática (MAT006)</i></td>
           </h6>
           <p><i>Si cuentan con más material de la carrera, adjuntarlo al siguiente correo</i></p>
           <p>
-            <i class="fas fa-envelope me-3"></i>
+            <i id="correo" class="fas fa-envelope me-3"></i>
             villalobos.axel@yahoo.es
           </p>
+          <button class="btn" data-clipboard-text="villalobos.axel@yahoo.es">
+    		Copiar correo
+</button>
           
         </div>
         <!-- Grid column -->
@@ -526,9 +529,10 @@ informática (MAT006)</i></td>
 <script type="text/javascript" src="https://cdn.datatables.net/rowreorder/1.2.8/js/dataTables.rowReorder.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.3.0/js/dataTables.responsive.min.js"></script>
 <script type="text/javascript" src="js/tablas.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 
 <script type="text/javascript">
+	new ClipboardJS('.btn');
 	document.getElementById("year").innerHTML = new Date().getFullYear()+" - Axel A.V";
 	$(document).on("click", "#material", function(e) {
            bootbox.prompt({
