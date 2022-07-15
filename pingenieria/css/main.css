@@ -1,0 +1,49 @@
+body{
+	background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	}
+
+	table{
+		color: white;
+	}
+		#titulo{
+			background-color: red;
+			color: white;
+			font-size: 11px;
+		}
+		#niveles{
+		background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		font-size: 11px;
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		#grado{
+		background: #41295a;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+			color: white;
+		font-weight: 2px;
+		}
+		tbody > tr:hover {background-color: coral;  }
+
+		html, body, pre, code, kbd, samp {
+          font-size: 8px;
+      }
+
+      td,thead{
+      	font-size: 10px;
+      }
+
+      p,h6{
+      	font-size: 10px;
+      }
+
