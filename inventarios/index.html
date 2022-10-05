@@ -298,15 +298,15 @@
 </script>
 <script type="text/javascript">
 	
-	$('.QA').empty();
-  	$('.tA').empty();
-  	$('.T').empty();
-  	$('.tr').empty();
-  	$('.nivel').empty();
-  	$('.tiempodeseado').empty();
+	
 	
 	$("#form-inventarios").submit(function(e){
-  		//alert("Submitted");
+  		$('.QA').empty();
+		$('.tA').empty();
+		$('.T').empty();
+		$('.tr').empty();
+		$('.nivel').empty();
+		$('.tiempodeseado').empty();
   		
   		var uT = $('#unidadtiempo option:selected').val();
   		var C = $('.costoarticulo').val();
@@ -322,7 +322,7 @@
   		var tr = obtenerTr(L,tA);
   		var nivel = obtenerLimiteInventario(QA,tA,tr,a);
   		var tiempoA = calcularInventarioActual(QA,iA,a,tA);
-  		e.preventDefault();
+  		
   		//var T = obtenerT(a,K,QA,h);
   		alert("Análisis realizado con éxito");
   		
@@ -334,8 +334,8 @@
   		$('.tiempodeseado').append("El inventario a las "+ iA +" " + uT + " es de "+ tiempoA + " unidades");
   		mostrarGraficoCostos(a,K,QA,C,h);
   		mostrarGraficoInventario(a,tA,QA,C);
+  		e.preventDefault();
   		
-  		//e.preventDefault();
 	});
 </script>
 </body>
