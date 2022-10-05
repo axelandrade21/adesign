@@ -228,18 +228,18 @@
 	}
 
 	function obtenerTA(a,K,h){
-		return Math.round(Math.sqrt((2*K)/(a*h)));
+		return Math.sqrt((2*K)/(a*h));
 	}
 	function obtenerCostoPedido(a,K,QA,h,c){
 		return Math.round((a*K)/QA+(a*c)+(h*QA)/2);
 	}
 
 	function obtenerTr(L,tA){
-		return tA-(L-Math.floor(L/tA)*tA);
+		return (L-Math.floor(L/tA)*tA);
 	}
 
 	function obtenerLimiteInventario(QA,tA,tr,a){
-		return QA-((tA-tr)*a);
+		return QA-(tA-tr)*a;
 	}
 	
 	function mostrarGraficoCostos(a,K,QA,c,h){
@@ -320,7 +320,11 @@
   		var tA = obtenerTA(a,K,h);
   		var T = obtenerCostoPedido(a,K,QA,h,C);
   		var tr = obtenerTr(L,tA);
-  		var nivel = obtenerLimiteInventario(QA,tA,tr,a);
+  		var nivel = QA-(tA-tr)*a;
+  		alert(QA);
+  		alert(tA);
+  		alert(tr);
+  		alert(a);
   		var tiempoA = calcularInventarioActual(QA,iA,a,tA);
   		
   		//var T = obtenerT(a,K,QA,h);
@@ -329,8 +333,9 @@
   		$('.QA').append(QA);
   		$('.tA').append("Cada "+tA+" "+uT);
   		$('.T').append("Costo: "+T);
-  		$('.tr').append(tr+" "+uT);
-  		$('.nivel').append(nivel + " unidades");
+  		$('.tr').append(tA-tr+" "+uT);
+  		
+  		$('.nivel').append(Math.round(Math.abs(nivel))+ " unidades");
   		$('.tiempodeseado').append("El inventario a las "+ iA +" " + uT + " es de "+ tiempoA  + " unidades");
   		mostrarGraficoCostos(a,K,QA,C,h);
   		mostrarGraficoInventario(a,tA,QA,C);
