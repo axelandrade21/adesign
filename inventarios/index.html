@@ -81,6 +81,17 @@
 		  <div class="col-sm-2 mb-2">
 		    <input type="text" class="form-control tiempoactual" name="tiempoactual" placeholder="Tiempo calculo inventario actual" >
 		  </div>
+
+		  <div class="form-check">
+			  <input class="form-check-input" type="checkbox" id="confaltantes">
+			  <label class="form-check-label" for="flexCheckDefault">
+			   Con faltantes
+			  </label>
+		 </div>
+
+		  <div class="col-sm-2 mb-2">
+		    <input type="text" class="form-control penalizacion" name="penalizacion" placeholder="Penalización" >
+		  </div>
 		  
 		</div>
 		 <div class="col-sm-2 mb-2 mx-auto">
@@ -201,6 +212,31 @@
     </div>
   </div>
 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        Tiempo deseado para calcular el inventario actual
+      </button>
+    </h2>
+    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body tiempodeseado">
+        
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" id="fraccion">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+        Fracción del tiempo en el que no existen faltantes
+      </button>
+    </h2>
+    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body fracciontiempo">
+        
+      </div>
+    </div>
+  </div>
+
 
 </div>
 			</div>
@@ -222,6 +258,9 @@
  <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
 
 <script type="text/javascript">
+
+
+
 	
 	function obtenerSA(a,K,h,p){
 		return Math.sqrt((2*a*K)/h)*Math.sqrt(p/(p+h));
@@ -301,10 +340,25 @@
 	}
 </script>
 <script type="text/javascript">
+	$(".penalizacion").css('display','none');
+	$("#fraccion").css('display','none');
 	
-	
+	$("#confaltantes").click(function(e){
+		
+		if(this.checked){
+			$(".penalizacion").css('display','block');
+			$("#fraccion").css('display','block');
+			//alert("siuuuuuuuuuuuuuuuu");
+		}else{
+			$(".penalizacion").css('display','none');
+			$("#fraccion").css('display','none');
+			$(".penalizacion").val("");
+		}
+		
+	});
 	
 	$("#form-inventarios").submit(function(e){
+		$('.fracciontiempo').empty();
   		$('.QA').empty();
 		$('.tA').empty();
 		$('.T').empty();
