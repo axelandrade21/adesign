@@ -465,7 +465,8 @@ informática (MAT006)</i></td>
 			Herramientas
 		  </h6>
 		  <p>
-			<a href="https://axelandrade21.github.io/web/guiagit/#/Intro" class="text-reset" target="_blank">Guía Github</a>
+			
+			 <button type="button" id="guias" class="btn btn-primary animate__animated  animate__pulse animate__infinite animate__slow	">Guías</button>
 		  </p>
 		  <p>
 			<a href="https://axelandrade21.github.io/web/tools/" class="text-reset" target="_blank">Software y recursos</a>
@@ -633,6 +634,48 @@ informática (MAT006)</i></td>
 				if(result == 13){
 					window.open('https://drive.google.com/drive/folders/1XggFYEGdvTToCYrGnGNjmRlhyd-_EbqY?usp=sharing', '_blank');
 				}
+				
+			}
+});
+});
+	
+	$(document).on("click", "#guias", function(e) {
+		   bootbox.prompt({
+			title: "Guías ",
+			message: '<p>Seleccione la guía:</p>',
+			inputType: 'radio',
+			inputOptions: [
+			{
+				text: 'GIT',
+				value: '1',
+			},
+			{
+				text: 'GIT con VisualCode',
+				value: '2',
+			},
+			{
+				text: 'Entidad-relación a modelo relacional',
+				value: '3',
+			},
+			{
+				text: 'PHP con SQLServer',
+				value: '4',
+			},
+			],
+			callback: function (result) {
+				if(result == 1){
+					window.open('https://axelandrade21.github.io/web/guiagit/#/Intro', '_blank');
+				}
+				if(result == 2){
+					window.open('https://drive.google.com/file/d/1oIQpLqiR-MPKF--p_IX455OUxQGoZfhJ/view?usp=sharing', '_blank');
+				}
+				if(result == 3){
+					window.open('https://drive.google.com/file/d/1sA0IAXarQatxHzqCi-wYQxgzxZkT9M3P/view?usp=sharing', '_blank');
+				}
+				if(result == 4){
+					window.open('https://drive.google.com/file/d/1JEQ3J4mXgw1V2sOHT9Yl4boTvQQy_BOQ/view?usp=sharing', '_blank');
+				}
+				
 				
 			}
 });
