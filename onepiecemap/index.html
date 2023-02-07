@@ -215,7 +215,7 @@
     </div>
 
     <div style=" display: flex; justify-content: center; height: 10vh; width: 100%; background-color: black; ">
-        <h4 style="color: white;">Creado por Axel Andrade Villalobos - 2021</h4>
+        <h4 style="color: white;">Creado por Axel Andrade Villalobos - <span id="year"></span> </h4>
     </div>
 
 
@@ -239,6 +239,8 @@
     <script src="js/map.setting.js"></script>
 
     <script>
+
+        $("#year").append(new Date().getFullYear())
 //         $(function(){
 //     $(document).bind("contextmenu",function(e){
 //         return false;
