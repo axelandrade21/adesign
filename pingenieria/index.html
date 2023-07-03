@@ -7756,6 +7756,11 @@ id="path5506" />
 
 
 <script>
+
+	document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
+
 	$("#year").html(new Date().getFullYear());
 
 
