@@ -19,7 +19,7 @@
 </head>
 <body>
 
-	<header>
+	<!-- <header>
 
 		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0F172A;">
 			
@@ -41,32 +41,93 @@
 			</div>
 		</nav>
 
-	</header>
+	</header> -->
 
 
-	<div id="tools-container" class="animate__animated animate__bounceIn">
+	<div id="tools-container">
+	  <div id="main-container-lottie" style="padding: 4rem">
+	    <div class="row">
+	      
+	      <div class="col-sm-12 col-md-4"  style="cursor:pointer;">
+	        <div class="recursos" onclick="consoleTool()">
+	          <div class="row">
+	            <div>
+	              <div class="card animate__animated animate__flipInX animate__delay-1s">
+	                <div class="card-body">
+	                  <h5>>_Console</h5>
+	                  <div id="lottie-container-recursos"></div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-sm-12 col-md-4" style="cursor:pointer;">
+	        <div class="tools">
+	          <div class="row">
+	            <div>
+	              <div class="card animate__animated animate__flipInX animate__delay-2s">
+	                <div class="card-body ">
+	                  <h5>Herramientas</h5>
+	                  <div id="lottie-container-tools" ></div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="col-sm-12 col-md-4" style="cursor:pointer;">
+	        <div class="guias">
+	          <div class="row">
+	            <div>
+	              <div class="card animate__animated animate__flipInX animate__delay-3s">
+	                <div class="card-body">
+	                  <h5 class="card-title">Guías</h5>
+	                  <div id="lottie-container-guias" ></div>
+	                </div>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
-		<div id="tools-container-card" class="guias" style="cursor:pointer;">
+
+
+		<!-- <div id="tools-container-card" class="guias" style="cursor:pointer;">
 
 			<h3><i class="fas fa-book" style="font-size: 1rem;"></i> Guías</h3>
-		</div>
-
+		</div> -->
+<!-- 
 		<div id="tools-container-card" class="recursos" style="cursor:pointer;" onclick="consoleTool()">
 			<h3>
 				<i class="fas fa-terminal"></i>Console</h3>
-		</div>
-
+		</div> -->
+<!-- 
 		<div id="tools-container-card" class="tools" style="cursor:pointer;">
 			<h3><i class="fas fa-toolbox" style="font-size: 1rem;"></i>Tools</h3>
+		</div> -->
+		
+	
+	<hr class="animate__animated animate__lightSpeedInRight animate__delay-4s">
+	<center>
+	
+	</center>
+		<div id="instruction" class="animate__animated animate__lightSpeedInLeft animate__delay-4s">
+			<h5 class="card-title">Presionar sobre el curso</h5>
+			<div id="lottie-container"></div>	
 		</div>
 		
-	</div>
+	<hr  class="animate__animated animate__lightSpeedInRight animate__delay-4s">
+	
 
-	<hr>
+	
 	
 	<center>
 		
-		<div id="plan-container">
+		<div id="plan-container" class="animate__animated animate__lightSpeedInLeft animate__delay-5s">
 			
 
 			<svg class="animate__animated animate__flipInY animate__delay-1s	"
@@ -7278,12 +7339,17 @@ id="path5506" />
 
 
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
+<footer class="text-center text-lg-start bg-light text-muted animate__animated animate__flipInY animate__delay-6s">
   
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    Creado por <em>Axel Andrade V. </em> - <span id="year"></span>
+  <div class="text-center p-4" style="background-color: #0F172A; color: white;">
+  	<div id="footer-content" >
+  		<div>Creado por <em style="color: #27ae60">Axel Andrade Villalobos </em> - <span id="year"></span></div>
+    
+    <div id="lottie-container-main" ></div>	
+
+    </div>
     
   </div>
   <!-- Copyright -->
@@ -7294,9 +7360,80 @@ id="path5506" />
 
 
 
-
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script src="assets/js/modaal/js/modaal.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+<script>
+  // Selecciona el contenedor y el archivo JSON de la animación
+  const container = document.getElementById('lottie-container');
+  const animationData = 'assets/js/click.json';
+
+  // Inicializa la animación de Lottie
+  const anim = bodymovin.loadAnimation({
+    container: container,
+    renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+    loop: true, // Opcional: establece si la animación debe repetirse en bucle
+    autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+    path: animationData // Ruta al archivo JSON de la animación
+  });
+
+  const containerGuias = document.getElementById('lottie-container-guias');
+  const animationDataGuias = 'assets/js/guias.json';
+
+  // Inicializa la animación de Lottie
+  const animGuia = bodymovin.loadAnimation({
+    container: containerGuias,
+    renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+    loop: true, // Opcional: establece si la animación debe repetirse en bucle
+    autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+    path: animationDataGuias // Ruta al archivo JSON de la animación
+  });
+
+
+  const containerConsole = document.getElementById('lottie-container-recursos');
+  const animationDataConsole = 'assets/js/console.json';
+
+  // Inicializa la animación de Lottie
+  const animConsole = bodymovin.loadAnimation({
+    container: containerConsole,
+    renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+    loop: true, // Opcional: establece si la animación debe repetirse en bucle
+    autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+    path: animationDataConsole // Ruta al archivo JSON de la animación
+  });
+
+
+  const containerTools = document.getElementById('lottie-container-tools');
+  const animationDataTools = 'assets/js/tools.json';
+
+  // Inicializa la animación de Lottie
+  const animTools = bodymovin.loadAnimation({
+    container: containerTools,
+    renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+    loop: true, // Opcional: establece si la animación debe repetirse en bucle
+    autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+    path: animationDataTools // Ruta al archivo JSON de la animación
+  });
+
+    const containerLinea= document.getElementById('lottie-container-main');
+  const animationDataLinea = 'assets/js/main.json';
+
+  // Inicializa la animación de Lottie
+  const animLinea = bodymovin.loadAnimation({
+    container: containerLinea,
+    renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+    loop: true, // Opcional: establece si la animación debe repetirse en bucle
+    autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+    path: animationDataLinea // Ruta al archivo JSON de la animación
+  });
+
+
+
+
+</script>
+
+
 
 <script>
 
@@ -7310,8 +7447,8 @@ id="path5506" />
 	$('.tools').modaal({
 		type:'ajax',
 		content_source: 'assets/cursos/tools.html',
-		width: 450,
-		height: 350,
+		width: 550,
+		height: 450,
 	});
 
 	$('#g5124').modaal({
@@ -7325,7 +7462,7 @@ id="path5506" />
 		type:'ajax',
 		content_source: 'assets/cursos/GEN1.html',
 		width: 450,
-		height: 350,
+		height: 450,
 	});
 
 	$('#path5098').modaal({

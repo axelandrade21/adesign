@@ -232,20 +232,17 @@
 			margin: 1rem;
 			list-style-type: none;
 		}
-
+/*
 		#tools-container{
 			display: flex;
-			width: 100%;
-			height: 20vh;
+			width: 100%;			
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			margin-bottom: 2rem;
-
-
-		}
+			
+		}*/
 		
 		#tools-container-card{
 			margin: 2rem;
@@ -262,6 +259,22 @@
 
 		}
 
+		/*#main-container-lottie{
+			display: flex;			
+			
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}*/
+		#main-container-lottie h3{
+			padding: 0;
+			margin-top: 1rem;
+		}
+
+
+
 		h3{
 			font-size: 17.5px;
 			padding: 1rem;
@@ -276,19 +289,124 @@
 			animation-duration: 2s; /* don't forget to set a duration! */
 		}
 
+		#lottie-container{
+			width: 15%;
+			
+		}
+		hr {
+    height: 1px;
+    background-color: #000;
+    border: none;
+    margin: 20px 0;
+  }
+
+		.card{
+			margin: 0.5rem;
+			border: 1px solid black;
+		}
+
+
+		 /* Track */
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+
+	.card-body {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	
+	#lottie-container-recursos,
+	#lottie-container-tools {
+		width: 50%;
+
+	}
+
+	#lottie-container-guias{
+		width: 50%;
+		
+	
+	}
+
+		/*
+		*/
+
+		#instruction{
+			
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#footer-content{
+			padding: 0;
+			margin: 0;
+			display: flex; flex-direction: row; justify-content: center; align-items: end;
+		}
+
+		#lottie-container-main {
+  width: 6%;
+  height: 6%;
+}
+
 
 
 		@media only screen and (max-width: 480px) {
 
 
-			.hello{
+			#footer-content{
+			display: flex; flex-direction: column; justify-content: center; align-items: center;
+		}
+			#lottie-container-main{
+			width: 36%;
+		}
+		.hello{
 				font-size: 13px;
 			}
 			#tools-container-card{
 				width: 65px;
 				height: 50px;
 			}
+			.card-body{
+				flex-direction: column-reverse;
+				justify-content: center;
+				align-items: center;				
+			}
 
+			#instruction{
+			
+			padding: 0;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#lottie-container{
+			width: 55%;
+			
+		}
+
+	
 			h3{
 				font-size: 10px;
 			}
@@ -298,6 +416,11 @@
 				height: auto;
 					margin-bottom: 8rem;
 			}
+
+
+
+
+
 
 			
 		}
