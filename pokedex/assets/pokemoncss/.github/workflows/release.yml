@@ -1,0 +1,30 @@
+name: Publish release on tag push
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Zip Release
+        uses: TheDoctor0/zip-release@0.6.1
+        with:
+          type: 'zip'
+          filename: 'release.zip'
+          path: 'template.html styles'
+          directory: 'dist'
+
+      - name: Create Release on GitHub
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: 'dist/release.zip'
+          removeArtifacts: true
+          body: 'Automatic release created by GitHub Action.'
+          prerelease: true
+          token: ${{ secrets.GITHUB_TOKEN }}

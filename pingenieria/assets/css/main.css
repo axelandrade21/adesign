@@ -1,237 +1,260 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fira+Sans&family=Francois+One&family=Lato:wght@300;700&family=Titan+One&display=swap');
-		body, html{
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-			font-family: 'Francois One', sans-serif;
 
 
-		}
-		#g2772{
-			margin: 1rem;
-			fill:   rgb(249 250 251);  /* fallback for old browsers */
+html {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Francois One', sans-serif;
+	min-height: 100%;
+	position: relative;
 
-			
-		}
-		svg{
-			margin: 0;
-			padding: 0;
-			width: 80%;
-			height: auto;
-			
+}
 
-		}
-		#g5124:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
+body{
+	margin: 0;
+	margin-bottom: 40px;
+}
 
-		#g4524:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g5100:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g4380:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g4326:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g5174:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5172:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4650:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5220:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g4266:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g5196:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4194:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5316:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4776:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4548:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4722:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4296:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4854:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4974:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g4140:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4902:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4410:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4218:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4878:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5388:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5442:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4494:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4950:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4464:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4926:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4824:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5496:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5028:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5364:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5466:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4746:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4440:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g5268:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-
-		#g4164:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g4998:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#g5076:hover{
-			fill: yellow;
-			cursor: pointer;
-		}
-		#plan-container{
-			margin-top: 1rem;
-			padding: 1rem;
-		}
+#g2772 {
+	margin: 1rem;
+	fill: rgb(249 250 251);
+	/* fallback for old browsers */
 
 
-		#menu{
-			display: flex;
-			justify-content: center;
-			flex-direction: row;
-		}
+}
 
-		#menu li{
-			margin: 1rem;
-			list-style-type: none;
-		}
+svg {
+	margin: 0;
+	padding: 0;
+	width: 80%;
+	height: auto;
+
+
+}
+
+#g5124:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4524:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5100:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4380:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4326:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5174:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5172:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4650:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5220:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4266:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5196:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4194:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5316:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4776:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4548:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4722:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4296:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4854:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4974:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4140:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4902:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4410:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4218:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4878:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5388:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5442:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4494:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4950:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4464:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4926:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4824:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5496:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5028:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5364:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5466:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4746:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4440:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5268:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4164:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g4998:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#g5076:hover {
+	fill: yellow;
+	cursor: pointer;
+}
+
+#plan-container {
+	margin-top: 1rem;
+	padding: 1rem;
+}
+
+
+#menu {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#menu li {
+	margin: 1rem;
+	list-style-type: none;
+}
+
 /*
 		#tools-container{
 			display: flex;
@@ -243,184 +266,309 @@
 			text-align: center;
 			
 		}*/
-		
-		#tools-container-card{
-			margin: 2rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			width: 120px;
-			height: 50px;
-			border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%  ;
-			border: 2px outset #db9191;
-			box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
--webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
--moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.41);
 
-		}
+#tools-container-card {
+	margin: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 50px;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+	border: 2px outset #db9191;
+	box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.41);
+	-webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.41);
+	-moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.41);
 
-		/*#main-container-lottie{
-			display: flex;			
-			
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-			
-			
-		}*/
-		#main-container-lottie h3{
-			padding: 0;
-			margin-top: 1rem;
-		}
+}
+
+#main-container-lottie {
+	display: flex;
+
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 
 
+}
 
-		h3{
-			font-size: 17.5px;
-			padding: 1rem;
-		}
 
-		#tools-container-card:hover{
-			background: #4e54c8;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-			color:white;
-			animation:pulse; /* referring directly to the animation's @keyframe declaration */
-			animation-duration: 2s; /* don't forget to set a duration! */
-		}
+#main-container-lottie h3 {
+	padding: 0;
+	margin-top: 1rem;
+}
 
-		#lottie-container{
-			width: 15%;
-			
-		}
-		hr {
-    height: 1px;
-    background-color: #000;
-    border: none;
-    margin: 20px 0;
-  }
 
-		.card{
+
+h3 {
+	font-size: 17.5px;
+	padding: 1rem;
+}
+
+#tools-container-card:hover {
+	background: #4e54c8;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #8f94fb, #4e54c8);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	animation: pulse;
+	/* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s;
+	/* don't forget to set a duration! */
+}
+
+#lottie-container {
+	width: 15%;
+
+}
+
+hr {
+	height: 1px;
+	background-color: #000;
+	border: none;
+	margin: 20px 0;
+}
+
+/*.card{
 			margin: 0.5rem;
 			border: 1px solid black;
-		}
+		}*/
 
 
-		 /* Track */
-  ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #f5f5f5;
-  }
+/* Track */
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: #f5f5f5;
+}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 4px;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color: #888;
+	border-radius: 4px;
+}
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color: #555;
+}
 
 
-	.card-body {
+/*	.card-body {
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 	}
+*/
 
-	
-	#lottie-container-recursos,
-	#lottie-container-tools {
-		width: 50%;
+#lottie-container-recursos,
+#lottie-container-tools {
+	width: 50%;
 
-	}
+}
 
-	#lottie-container-guias{
-		width: 50%;
-		
-	
-	}
+#lottie-container-guias {
+	width: 50%;
 
-		/*
+
+}
+
+/*
 		*/
 
-		#instruction{
-			
-			padding: 0;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
-		}
+#instruction {
 
-		#footer-content{
-			padding: 0;
-			margin: 0;
-			display: flex; flex-direction: row; justify-content: center; align-items: end;
-		}
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
 
-		#lottie-container-main {
-  width: 6%;
-  height: 6%;
+#footer-content {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: end;
+}
+
+#lottie-container-main {
+	width: 6%;
+	height: 6%;
 }
 
 
 
-		@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+
+	.mobile {
+		display: flex;
+		justify-content: center;
+	}
 
 
-			#footer-content{
-			display: flex; flex-direction: column; justify-content: center; align-items: center;
-		}
-			#lottie-container-main{
-			width: 36%;
-		}
-		.hello{
-				font-size: 13px;
-			}
-			#tools-container-card{
-				width: 65px;
-				height: 50px;
-			}
-			.card-body{
-				flex-direction: column-reverse;
-				justify-content: center;
-				align-items: center;				
-			}
+	#footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-			#instruction{
-			
-			padding: 0;
-			display: flex;
-			flex-direction: column-reverse;
-			justify-content: center;
-			align-items: center;
-		}
+	#lottie-container-main {
+		width: 36%;
+	}
 
-		#lottie-container{
-			width: 55%;
-			
-		}
+	.hello {
+		font-size: 13px;
+	}
 
+	#tools-container-card {
+		width: 65px;
+		height: 50px;
+	}
+
+	.card-body {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#instruction {
+
+		padding: 0;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#lottie-container {
+		width: 55%;
+
+	}
+
+
+	h3 {
+		font-size: 10px;
+	}
+
+	svg {
+		width: 100%;
+		height: auto;
+		margin-bottom: 8rem;
+	}
+
+
+}
+
+
+.tool-img {
+	width: 2.5rem;
+
+}
+
+.tool-detail {
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: justify;
+}
+
+.tool-detail h6 {
+	margin-top: 0.5rem;
+	text-align: center;
+}
+
+.curve {
+	fill: #fff;
+	height: 100px;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+
+}
+
+.custom-shape-divider-top-1703554943 {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.custom-shape-divider-top-1703554943 svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 150px;
+	transform: rotateY(180deg);
+	filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+	/* Agrega una sombra */
+}
+
+.custom-shape-divider-top-1703554943 .shape-fill {
+	fill: #FFFFFF;
 	
-			h3{
-				font-size: 10px;
-			}
+}
 
-			svg{
-				width: 100%;
-				height: auto;
-					margin-bottom: 8rem;
-			}
+.custom-shape-divider-bottom-1703555821 {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+	
+}
+
+.custom-shape-divider-bottom-1703555821 svg {
+	
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 150px;
+	transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1703555821 .shape-fill {
+	fill: #FFFFFF;
+}
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+	.custom-shape-divider-bottom-1703555821 svg {
+		position: relative;
+		display: none;
+		width: calc(100% + 1.3px);
+		height: 150px;
+		transform: rotateY(180deg);
+	}
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
 
 
-
-
-
-
-			
-		}

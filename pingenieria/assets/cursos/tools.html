@@ -1,58 +1,198 @@
 <div>
 	<center>
 		<h2>Herramientas</h2>
-		
+
 	</center>
 	<br>
+	<div style="display: flex;
+	flex-wrap: wrap; justify-content: space-around; align-items: center; ">
+		<div class="m-3 p-3 "
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>Editores</h5>
+			<div style="display: flex; justify-content: space-around;">
+				<div class="tool-detail">
+					<a href="https://www.sublimetext.com/download" target="_blank"><img class="tool-img"
+							src="https://www.sublimehq.com/images/sublime_text.png" alt=""></a>
+					<h6 style="font-size: 13px;">Sublime text</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://github.com/adobe/brackets/releases" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brackets_Icon.svg/1024px-Brackets_Icon.svg.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Brackets</h6>
+				</div>
+
+				<div class="tool-detail">
+					<a href="https://code.visualstudio.com" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Visual Studio Code</h6>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>IDE</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://netbeans.apache.org/front/main/download/index.html" target="_blank"><img
+							class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Apache_NetBeans_Logo.svg/1776px-Apache_NetBeans_Logo.svg.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Apache Netbeans</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="http://www.drjava.org" target="_blank"><img class="tool-img"
+							src="https://migracion.ucr.ac.cr/wp-content/uploads/2017/03/dr_java.png" alt=""></a>
+					<h6 style="font-size: 13px;">Dr Java</h6>
+				</div>
+
+				<div class="tool-detail">
+					<a href="https://sourceforge.net/projects/orwelldevcpp/" target="_blank"><img class="tool-img"
+							src="https://www.freeiconspng.com/thumbs/c-logo-icon/dev-visual-c-plus-plus-logo-icon-11.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Dev C++</h6>
+				</div>
+
+				<div class="tool-detail">
+					<a href="https://sourceforge.net/projects/codeblocks" target="_blank"><img class="tool-img"
+							src="https://banner2.cleanpng.com/20180514/rkw/kisspng-code-blocks-integrated-development-environment-c-5af9eee0253788.5088014415263290561525.jpg"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Codeblocks</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://zinjai.sourceforge.net" target="_blank"><img class="tool-img"
+							src="https://3.bp.blogspot.com/-VcUpTFX0TbY/VAyo9HKk_wI/AAAAAAAAGR8/rJz9EXlmAMI/s1600/logo.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">ZinjaI</h6>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>Emuladores y VM</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://emu8086.waxoo.com" target="_blank"><img class="tool-img"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAADJCAMAAAA93N8MAAAAe1BMVEX///8AAACGhobp6enHx8e/v78ICAiCgoKZmZnQ0ND6+vr09PSTk5NKSkoSEhJubm4XFxdkZGQlJSVBQUHe3t7W1tb29vZxcXHu7u4zMzO7u7suLi6goKBeXl5PT08bGxuvr689PT0iIiJGRkZ6enqUlJSlpaWxsbFXV1fJZbqxAAAErUlEQVR4nO2d63aiMBRGuYqg1qqgiHdrq+//hKO0tcnhhKQzXaYTvu/3XoezkxAwdK16njZhWgw0yLxIQ12ZPM3nGmRgVibTIGFRlLoyBsmG/i3LqoWJXmomaDErkxoZpS1lzqua6bcg+bhGJnkLs366IdN9C2KUvOd/ZKNkFp+IrxSL7kiiQrLtJzJVzvzbvcxahYSrT2SkW2Ptyf2vjBTMRWAKHokEZKEosxIYxXJdC4jCvRSQaZuZNmI/ipW4F5Edi2Qi4scscxIRfpRzqQy/5rcicjIwVKWSLuaz24uMvHHIUEJWHFLKZdg7ZyMh7A2YymX+YbO7yJW4+YpkZMuVeZYZbr7eZISdLxnxOeQkI+xEmOUoVxoySF/fEJlRn3tYkJ4PDFKQMty+sjQYQaNkT3Ilbod61auHBOH2jIm+DFnMfsQwpGF2DRqFqo8Zhs46sx88UJ3cWqqHkj5QhzrUSaAOdajLgTrUoU4CdahDXQ7UoQ51kh9Tp4ce3CmNwQHVD6nTAypOffd36mERk1T0vCeiRBwtZMSvGki8J8iCKTOiXs0ydJCHTSQiDR+aZZqfpMJg6ncky770BTGw3c9j83XLzQ+2e3l0Zh+7cbbSs65l+a6+0ZPuZXIzr/Sci4mbz8KuZNr4XtidpF5iuwVbCbyD7RZs5eL19JCbOdIP9t1JD+odDNS/Mk4jR5OONeqB4cHGf5gA6lCHOtSh7migDnWoQx3qrgbqUIc61KHuaqAOdahDHequBupQhzrUoe5qoA51qEMd6q4G6lCHOtSh7mqgDnWoQx3qrgbqUIc61KHuaqAOdahDHequBupQhzrUoe5qoA51qEMd6q4G6lCHOtSh7mqgDnWoQx3qrgbqUIc61KHuaqAOdahDHequBupQhzrUoe5qoA51qEMd6q4G6lCHOtQ7rn4qQ0dTnjTq3QnUu5hOq3f231E/eUvbLdjKzDvpITeTeJXtFmwl9jLbLdjK9f1uaLsHO1lf1bNn213YyKF+rc9tt2Ej4ftPmsJ2H49P/vlzrhzZbuWx2ZbCb9m4Q/LbmPyQL6t+kJCQl9xlA0iCLal7aiAJfWkaMWXoOyWDjAkyYZgnGTk2kGBdlZ5JdnKlMYOsSUNZExkQpM+UWRCGQeiOFDHMVEZejCzZGKj3SUODJhISZMiUoVPKIClB6LK9hajPvqcrBupQh7ocqEMd6nKgDnWok0Ad6lCXA3Wo/0L1eROh6q9MmV+nvpIrJQzypu+Zft/ZMwz5O5dnBqFn5inDkOOyyTdcSchcnBmEHBsduDJkBAsG2cvIgitD1Jn1RUeQOwozTCxXYu5jj3yfX3OIfFPsOGQuX4k7dyMTseUQMhGhqSgT6aCU25487ywiPeZU0iPzVbGINF/s2iF7Rs4yFxHh9ibjiFdTHW9uBIa7/66JDPoRR1kxW+K+oljL4unvkZ8H0+T3k+2NstDXQbLCXHTntso62X2LOvIT6ok7Antj3RLeN5YX9v78RrJh/YR74Zfpe6K6617Qcq0yqdu5KAfnmvPshkzb9qb8fZjHysG5Zl0/4Q77FsQ4YVroBnBepNotJU9z3QocmJXRIWWhbfiWPwPaePD7IHptAAAAAElFTkSuQmCC"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Emu0886</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://www.virtualbox.org/wiki/Downloads" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png" alt=""></a>
+					<h6 style="font-size: 13px;">VirtualBox</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://www.vmware.com/es/products/workstation-player/workstation-player-evaluation.html" target="_blank"><img class="tool-img"
+							src="https://www.freepnglogos.com/uploads/vmware-png-logo/partners-login-vmware-png-logo-10.png" alt=""></a>
+					<h6 style="font-size: 13px;">VMware</h6>
+				</div>
 	
-	<h6>Editores</h6>
-	<ul style="">
-		<li> <a href="https://www.sublimetext.com/download">Sublime text</a></li>
-		<li><a href="https://github.com/adobe/brackets/releases">Brackets</a></li>
-		<li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
-	</ul>
-	<br>
-	<h6>IDE</h6>
-	<ul>
-		<li><a href="https://netbeans.apache.org/download/index.html">Apache Netbeans</a></li>
-		<li><a href="http://www.drjava.org">Dr Java</a></li>
-		<li><a href="https://sourceforge.net/projects/orwelldevcpp">Dev C++</a></li>
-		<li><a href="https://sourceforge.net/projects/codeblocks">CodeBlocks</a></li>
-		<li><a href="https://zinjai.sourceforge.net">Zinjal</a></li>
-	</ul>
-	<br>
-	<h6>Emuladores y máquinas virtuales</h6>
-	<ul>
-		<li><a href="https://emu8086.waxoo.com">Emu0886</a></li>
-		<li><a href="https://www.virtualbox.org">VirtualBox</a></li>
-	</ul>
-	<br>
-	<h6>Servidores locales</h6>
-	<ul>
-		<li><a href="https://www.apachefriends.org/es/index.html">XAMPP</a></li>
-		<li><a href="https://www.wampserver.com/en">WAMPP</a></li>
-	</ul>
-	<br>
-	<h6>Programas para realizar modelos</h6>
-	<ul>
-		<li><a href="https://staruml.io">StarUML</a></li>
-		<li><a href="https://www.modelio.org">Modelio</a></li>
-		<li><a href="http://dia-installer.de/download/index.html">Dia Diagram Editor</a></li>
-	</ul>
-	<br>
-	<h6>Hosting gratis</h6>
-	<ul>
-		<li><a href="https://www.000webhost.com">000Webhost</a></li>
-		<li><a href="https://pages.github.com">GitHubPages</a></li>
-	</ul>
-	<br>
-	<h6>Gestores de bases de datos</h6>
-	<ul>
-		<li><a href="https://learn.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16">SQL Server Management Studio</a></li>
-		<li><a href="https://dbeaver.io/download">DBeaver</a></li>
-	</ul>
+			</div>
+
+		</div>
+
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>Servidores locales</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://www.apachefriends.org/es/index.html" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/d/dc/XAMPP_Logo.png" alt=""></a>
+					<h6 style="font-size: 13px;">XAMPP</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://www.wampserver.com/en" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/WampServer-logo.svg/2048px-WampServer-logo.svg.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">WAMPP</h6>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>Software modelado</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://staruml.io" target="_blank"><img class="tool-img"
+							src="https://cdn.icon-icons.com/icons2/1381/PNG/512/staruml_94078.png" alt=""></a>
+					<h6 style="font-size: 13px;">StarUML</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://www.modelio.org" target="_blank"><img class="tool-img"
+							src="data:image/png;base64,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"
+							alt=""></a>
+					<h6 style="font-size: 13px;">Modelio</h6>
+				</div>
+
+				<div class="tool-detail">
+					<a href="http://dia-installer.de/download/index.html" target="_blank"><img class="tool-img"
+							src="https://toolbox.cogiti.es/assets/frontend/images/Products/1507211395.png" alt=""></a>
+					<h6 style="font-size: 13px;">Dia Editor</h6>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
+
+			<h5>Hosting gratis</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://www.000webhost.com" target="_blank"><img class="tool-img"
+							src="https://images.theengineeringprojects.com/image/300/2018/02/000webhost.png" alt=""></a>
+					<h6 style="font-size: 13px;">000Webhost</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://pages.github.com" target="_blank"><img class="tool-img"
+							src="https://img2.freepng.es/20180418/siw/kisspng-github-pages-random-icons-5ad6e9863397c7.5716118315240339262113.jpg"
+							alt=""></a>
+					<h6 style="font-size: 13px;">GitHubPages</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://www.netlify.com/" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Netlify_logo.svg/1280px-Netlify_logo.svg.png" alt=""></a>
+					<h6 style="font-size: 13px;">Netlify</h6>
+				</div>
+			</div>
+
+		</div>
 
 
+		<div class="m-3 p-3"
+			style="display: flex; justify-content: center; flex-direction: column; align-items: center; flex-wrap: wrap;">
 
-	
+			<h5>Gestores de bases de datos</h5>
+			<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+				<div class="tool-detail">
+					<a href="https://learn.microsoft.com/es-es/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16"
+						target="_blank"><img class="tool-img"
+							src="https://www.edureka.co/blog/wp-content/uploads/2019/10/logo.png" alt=""></a>
+					<h6 style="font-size: 13px;">SQL
+						Server Management Studio</h6>
+				</div>
+				<div class="tool-detail">
+					<a href="https://dbeaver.io/download" target="_blank"><img class="tool-img"
+							src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/DBeaver_logo.svg/2048px-DBeaver_logo.svg.png"
+							alt=""></a>
+					<h6 style="font-size: 13px;">DBeaver</h6>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </div>

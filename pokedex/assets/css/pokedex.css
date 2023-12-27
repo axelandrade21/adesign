@@ -1,0 +1,83 @@
+body {
+    background-color: #f8f8f8;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*Contenedor para cada pokémon en forma de galería*/
+.gallery-container {
+    display: grid;
+    /*Se ajustan las columnas automaticamente con un ancho de 200px y como máximo 1fr    */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    /*Se coloca un espacio */
+    gap: 1rem; 
+    justify-items: center;
+}
+/*Reglas para el item*/
+.gallery-item {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 200px; 
+    height: 240px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Reglas para la imagen del pokémon*/
+
+.gallery-item img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.gallery-item:hover {
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+    animation: tada; /* Se le aplica la animación de la librería Animate CSS*/
+    animation-duration: 1s; 
+}
+
+/* Fuente tipo juego */
+.gallery-item p{
+	   font-family: 'Press Start 2P', cursive;
+	   font-size: 10px;
+}
+
+
+.container-filtro{
+	display: flex;
+	flex-direction: row;
+	margin: 1rem;	 
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 767.98px) { 
+
+    .container-filtro{
+        display:flex;
+        flex-direction: column;
+    }
+
+    #pokemon-info > #picture > img{
+        width: 200px;
+        height: auto;
+    }
+
+    #pokemon-info > #info > p{
+        text-align: center;
+        font-size: 12px;
+    }
+}

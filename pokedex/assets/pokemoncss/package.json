@@ -1,0 +1,24 @@
+{
+  "name": "css-pokemon-gameboy",
+  "description": "A small CSS-framework based on the original Pokémon games for the Game Boy.",
+  "author": {
+    "name": "Lutt.online"
+  },
+  "version": "0.5.0",
+  "license": "Unlicense",
+  "repository": "https://github.com/luttje/css-pokemon-gameboy",
+  "scripts": {
+    "watch": "grunt watch",
+    "build": "grunt && npm run licenses",
+    "licenses": "npx license-checker-rseidelsohn --plainVertical --excludePackages css-pokemon-gameboy --out LICENSES-THIRD-PARTY.md"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "license-checker-rseidelsohn": "^4.2.0",
+    "node-sass": "^7.0.3"
+  }
+}

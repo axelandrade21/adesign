@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <link rel="icon" href="assets/icon.png" type="image/x-icon">
+	<title>Pokédex - Proyecto</title>
+	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/pokemoncss/dist/styles/css-pokemon-gameboy.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
+	  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body id="container-body">
+	<!-- Menu navbar -->
+	<div class="intro framed no-hd">
+		<button class="buscar-poke" id="buscar-poke"> Buscar pókémon</button>
+		<button  id="pokedex-completa">Pokédex</button>
+	</div>
+
+	<!-- Modal de búsqueda -->
+	<div id="buscar-poke-container" style="display:none;">
+			<div id="buscar-poke-body" class="nes-field" >
+  
+  				<input type="text" id="pokemon-nombre" class="nes-input"><a class="nes-btn" id="buscar" href="#">Buscar</a>
+
+
+			</div>
+			<center><div id="progreso" style="margin-top: 2rem;"></div></center>
+		
+		</div>
+
+	 <!-- LottieFile de Pokebola, carga solamente cuando está en un servidor -->
+<!-- 	<div class="loader ">		
+		<div id="animation" class="animation">
+		</div>
+	</div> -->
+
+	<!-- Dependencias  -->	
+
+	<script type="text/javascript">
+		const AudioContext = window.AudioContext || window.webkitAudioContext;
+ 		const context = new AudioContext();
+		window.addEventListener('DOMContentLoaded', () => {
+	  	document.getElementById("container-body").addEventListener('click', () => {
+	    	context.resume();
+	  	}, { once: true });
+		});
+
+		//document.getElementById("container-body").click();
+	</script>
+
+	<script type="text/javascript" src="assets/js/howler.min.js"></script>
+
+	<script type="text/javascript">
+		
+		var sound = new Howl({
+  		src: ['assets/optionmenu.mp3']
+		});
+
+		document.getElementById('buscar-poke').addEventListener('mouseover', () => {
+  		context.resume().then(() => {
+    	// play the sound
+   			 sound.play();
+  		});
+		});
+		document.getElementById('pokedex-completa').addEventListener('mouseover', () => {
+  		context.resume().then(() => {
+    // play the sound
+  	  sound.play();
+  	});
+		});
+
+
+		
+	</script>
+	<script src="https://unpkg.com/notie"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.11.0/lottie.min.js" integrity="sha512-XCthc/WzPfa+oa49Z3TI6MUK/zlqd67KwyRL9/R19z6uMqBNuv8iEnJ8FWHUFAjC6srr8w3FMZA91Tfn60T/9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+  <!-- Mis scripts  -->	
+  <script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
