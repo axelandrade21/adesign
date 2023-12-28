@@ -353,3 +353,12 @@ $('#english').modaal({
     // height: 450,
     fullscreen: true
 });
+
+
+$('#ti-roles').modaal({
+    type: 'ajax',
+    content_source: 'assets/roles/roles.html',
+    // width: 450,
+    // height: 350,
+    fullscreen: true
+});

@@ -321,7 +321,7 @@ button {
 }
 
 .card {
-  width: 200px;
+  width: 150px;
   transform: rotate(var(--rotation));
   transition: 0.15s ease-out;
   margin: 2rem;
