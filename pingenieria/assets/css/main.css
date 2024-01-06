@@ -575,3 +575,8 @@ a{
 #role-style{
 	font-family: 'Francois One', sans-serif;
 }
+
+.notie-container {
+	box-shadow: none;
+  }
+

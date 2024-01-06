@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="assets/css/courses.css">
 	<link rel="stylesheet" href="assets/css/footer.css">
 	<link rel="stylesheet" href="assets/css/roles.css">
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
 
 	<style type="text/css">
 		@media (max-width: 480px) {
@@ -57,7 +58,7 @@
 									<i class="ai-circle-triangle-right-fill"></i>
 								</button>
 							</div> -->
-							<h2 class="card-title">Ir a plan de estudios</h2>
+							<h2 class="card-title">Ir a descargar material de cursos</h2>
 						</div>
 					</div>
 				</a>
@@ -192,7 +193,8 @@
 
 		<div class="container animate__animated animate__slideInRight ">
 			<h1 style="text-align: center;">Plan de estudios - Ingeniería en sistemas</h1>
-			<h3 style="text-align: center;">Para ver información o descargar material relacionado al curso, presionar
+			<h3 class="font-weight-bold" style="text-align: center;">Para ver información o descargar material
+				relacionado al curso, presionar
 				sobre el mismo</h3>
 
 			<!--Nivel I-->
@@ -493,7 +495,20 @@
 
 	<!--Fin Sección de plan de estudios-->
 
-
+	<section id="email-section"
+		style="display: flex; justify-content: center;flex-wrap: wrap; margin-top: 4rem; align-items: center;">
+		<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+			<h4 class="text-center">¿Te gustaría colaborar con material de cursos?</h4>
+			<h6 class="text-center font-weight-bold">¡Copia mi correo abajo y envíalos!</h6>
+			<div id="email-send" style="width: 5rem; cursor: pointer;" onclick="copyEmail()"></div>
+		</div>
+		<div class="m-4"></div>
+		<div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+			<h4 class="text-center">¿Necesitas asesoría sobre algún proyecto?</h4>
+			<h6 class="text-center font-weight-bold">¡Contáctame!</h6>
+			<div id="whatsapp-send" style="width: 5rem; cursor: pointer;" onclick="goWhatsapp()"></div>
+		</div>
+	</section>
 
 
 
@@ -527,7 +542,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.3.js"
 		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 	<script src="assets/js/modaal/js/modaal.js"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 
 
 	<script src="assets/js/modales.js"></script>
@@ -539,7 +554,7 @@
 
 	<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
 
-
+	<script src="https://unpkg.com/notie"></script>
 
 
 
@@ -611,7 +626,43 @@
 			content: 'Descargar material de cursos de la carrera de Ingeniería en Sistemas',
 		});
 
-		
+
+	</script>
+
+	<script>
+		function copyEmail() {
+			// Copy the text inside the text field
+			navigator.clipboard.writeText("villalobos.axel@yahoo.es");
+			notie.alert({ text: '¡Copiado con éxito!', position: 'bottom' })
+		}
+
+		function goWhatsapp(){
+			window.open('https://api.whatsapp.com/send?phone=50686253019', '_blank');
+		}
+
+		const container = document.getElementById('email-send');
+		const animationData = 'assets/js/email.json';
+
+		// Inicializa la animación de Lottie
+		const anim = bodymovin.loadAnimation({
+			container: container,
+			renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+			loop: true, // Opcional: establece si la animación debe repetirse en bucle
+			autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+			path: animationData // Ruta al archivo JSON de la animación
+		});
+
+		const container_2 = document.getElementById('whatsapp-send');
+		const animationData_2 = 'assets/js/whatsapp.json';
+
+		// Inicializa la animación de Lottie
+		const anim_2 = bodymovin.loadAnimation({
+			container: container_2,
+			renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+			loop: true, // Opcional: establece si la animación debe repetirse en bucle
+			autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+			path: animationData_2 // Ruta al archivo JSON de la animación
+		});
 	</script>
 
 </body>
