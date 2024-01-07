@@ -8,12 +8,14 @@ html {
 	font-family: 'Francois One', sans-serif;
 	min-height: 100%;
 	position: relative;
+	
 
 }
 
 body{
 	margin: 0;
 	margin-bottom: 40px;
+	overflow-x: hidden;
 }
 
 #g2772 {
