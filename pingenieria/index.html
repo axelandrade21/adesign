@@ -196,7 +196,11 @@
 			<h3 class="font-weight-bold" style="text-align: center;">Para ver información o descargar material
 				relacionado al curso, presionar
 				sobre el mismo</h3>
-
+			<div style="display: flex; justify-content: center; align-items: center;">
+				<h3> <strong> Descargar plan de estudios</strong></h3>
+				<div id="download-document" style="width: 2rem; cursor: pointer;" onclick="downloadDocument()"></div>
+			</div>
+			
 			<!--Nivel I-->
 			<div class="ac">
 
@@ -640,6 +644,10 @@
 			window.open('https://api.whatsapp.com/send?phone=50686253019', '_blank');
 		}
 
+		function downloadDocument(){
+			window.open('./assets/pdf/plan.pdf', '_blank');
+		}
+
 		const container = document.getElementById('email-send');
 		const animationData = 'assets/js/email.json';
 
@@ -662,6 +670,18 @@
 			loop: true, // Opcional: establece si la animación debe repetirse en bucle
 			autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
 			path: animationData_2 // Ruta al archivo JSON de la animación
+		});
+
+		const container_3 = document.getElementById('download-document');
+		const animationData_3 = 'assets/js/download.json';
+
+		// Inicializa la animación de Lottie
+		const anim_3 = bodymovin.loadAnimation({
+			container: container_3,
+			renderer: 'svg', // Elige el renderizador (svg, canvas, html)
+			loop: true, // Opcional: establece si la animación debe repetirse en bucle
+			autoplay: true, // Opcional: establece si la animación debe comenzar automáticamente
+			path: animationData_3 // Ruta al archivo JSON de la animación
 		});
 	</script>
 
