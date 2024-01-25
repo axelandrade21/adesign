@@ -582,3 +582,14 @@ a{
 	box-shadow: none;
   }
 
+  
+
+  @media only screen and (max-width: 767px) {
+	/* Tus estilos para dispositivos móviles aquí */
+	#plan-download{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	}
