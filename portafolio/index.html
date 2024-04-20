@@ -88,7 +88,7 @@
     </div>
 
     <!-- Minibar -->
-    <div class="minibar">
+    <div class="minibar" style="background-color: white; border-right: 2px solid black; color: black; ">
       <div class="header">
         <div class="brand"></div>
       </div>
@@ -134,15 +134,20 @@
       <!-- <hr> -->
 
       <!-- Page About -->
-      <div class="vg-page page-about" id="about">
+      <div class="vg-page page-about wow fadeInRight" id="about">
         <!-- Profile -->
-        <div class="container py-3">
-          <div class="row">
+        <div class="container py-3" style="border: 2px solid black;">
+          <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg" >
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;"> <strong>Sobre mi</strong> </h3>
+          </div>
+          <div class="row" style="margin: 2rem;">
             <div class="col-md-6">
               <div class="caption wow fadeInRight">
+                <strong>
                 <h2 class="fg-dark">Soy Axel Andrade Villalobos</h2>
 
-                <p style="text-align: justify">
+                <p style="text-align: justify; color: black;">
                   Me gusta la <strong>tecnología</strong>, me motiva trabajar en
                   nuevos proyectos y descubrir nuevas formas de solucionar los
                   diferentes problemas. He realizado diferentes proyectos
@@ -152,16 +157,17 @@
                   tocar guitarra, también me gusta aprender idiomas en mis
                   tiempos libres.
                 </p>
+                </strong>
                 <ul class="theme-list">
                   <li class="fg-dark"><b>De:</b> Costa Rica</li>
                   <li class="fg-dark"><b>Vivo en:</b> Río Frío, Sarapiquí</li>
                 </ul>
                 <button
-                  class="btn btn-theme btn-rounded"
+                  class="btn "
                   onclick="window.open('assets/cv/CV.pdf')"
-                  style="background-color: #20214f"
+                  style="background-color: white; color: black; border: 1px solid black; "
                 >
-                  Descargar CV
+                  <strong>Descargar CV</strong> 
                 </button>
               </div>
             </div>
@@ -174,14 +180,18 @@
         <!-- End profile -->
         <hr />
         <!-- Skills -->
-        <div class="container mt-5">
-          <center>
+        <div class="container mt-5 wow fadeInLeft" style="border: 2px solid black; color: black;">
+        <!--   <center>
             <div id="lottie-container-skills"></div>
-          </center>
-          <h1 class="text-center fg-dark wow fadeInUp">Mis aptitudes</h1>
+          </center> -->
+          <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg">
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;"><strong>Aptitudes</strong></h3>
+          </div>
+          <!-- <h1 class="text-center fg-dark wow fadeInUp">Mis aptitudes</h1> -->
 
-          <div class="row py-3">
-            <div class="col-md-6">
+          <div class="row py-3" style="margin: 2rem;">
+            <div class="col-md-6" >
               <h4 class="wow fadeInUp">Lenguajes de programación </h4>
               <div class="progress-wrapper wow fadeInUp">
                 <span class="caption"> C,C++,C#, Java, JavaScript, SQL, Python </span>
@@ -400,19 +410,24 @@
         <!-- End skills -->
         <hr />
         <!-- Resume -->
-        <div class="container pt-5">
-          <div class="row">
+        <div class="container pt-5 wow fadeInRight" style="border: 2px solid black; color: black;">
+
+          <div class="row" style="margin: 2rem;">
             <div class="col-md-6 wow fadeInRight">
               <center>
                 <div id="lottie-container-education"></div>
               </center>
-              <h2 class="fg-dark">Educación</h2>
+              <!-- <h2 class="fg-dark">Educación</h2> -->
+              <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg">
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;"><strong>Educación</strong></h3>
+          </div>
               <ul class="timeline mt-4 pr-md-5">
                 <li>
-                  <div class="title" style="background-color: #20214f">
+                  <div class="title" style="background-color: black;">
                   2024
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5> Introduction to Cybersecurity</h5>
                     <small class="fg-theme"
                       >Cisco</small
@@ -423,7 +438,7 @@
                   <div class="title" style="">
                     2024
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5> Cloud Computing Fundamentals</h5>
                     <small class="fg-theme"
                       >IBM</small
@@ -434,7 +449,7 @@
                   <div class="title" style="">
                     2024
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>
                       CS302: Software Engineering</h5>
                     <small class="fg-theme"
@@ -446,7 +461,7 @@
                   <div class="title" >
                     2024
                   </div>
-                  <div class="details">
+                  <div class="details" style="border:2px solid black; background-color: white; border-radius: 0px">
                     <h5> CS105: Introduction to Python</h5>
                     <small class="fg-theme"
                       >Saylor Academy</small
@@ -457,7 +472,7 @@
                   <div class="title" >
                     2024 - Bachillerato en Ingeniería de Sistemas
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Ingeniería de Sistemas</h5>
                     <small class="fg-theme"
                       >Universidad Nacional - Campus Sarapiquí</small
@@ -466,7 +481,7 @@
                 </li>
                 <li>
                   <div class="title">2023</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Scrum Foundation Professional Certificate SFPC (v2020) </h5>
                     <small class="fg-theme">CertiProf</small>
                   </div>
@@ -476,7 +491,7 @@
                     2022 - Diplomado en Programación de Aplicaciones
                     Informáticas
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Ingeniería de Sistemas</h5>
                     <small class="fg-theme"
                       >Universidad Nacional - Campus Sarapiquí</small
@@ -486,7 +501,7 @@
 
                 <li>
                   <div class="title">6 de Septiembre 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Introduction to Structured Query Language (SQL)</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -494,7 +509,7 @@
 
                 <li>
                   <div class="title">10 de Agosto 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Building Web Applications in PHP</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -502,7 +517,7 @@
 
                 <li>
                   <div class="title">16 de Julio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Introduction to Git and GitHub</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -510,7 +525,7 @@
 
                 <li>
                   <div class="title">2 de Julio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Advanced Styling with Responsive Design</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -518,7 +533,7 @@
 
                 <li>
                   <div class="title">21 de Junio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Interactivity with JavaScript</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -526,7 +541,7 @@
 
                 <li>
                   <div class="title">16 de Junio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Introduction to CSS3</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -534,7 +549,7 @@
 
                 <li>
                   <div class="title">8 de Junio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Introduction to HTML5</h5>
                     <small class="fg-theme">Coursera</small>
                   </div>
@@ -542,7 +557,7 @@
 
                 <li>
                   <div class="title">7 de Junio 2020</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>
                       Responsive Website Basics: Code with HTML, CSS, and
                       JavaScript
@@ -553,7 +568,7 @@
 
                 <li>
                   <div class="title">2012</div>
-                  <div class="details">
+                  <div class="details" style="border:2px solid black; background-color: white; border-radius: 0px">
                     <h5>Bachillerato en Educación Media</h5>
                     <small class="fg-theme">Colegio Nocturno de Río Frío</small>
                   </div>
@@ -561,7 +576,7 @@
 
                 <li>
                   <div class="title">2006</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Educación Primaria completa</h5>
                     <small class="fg-theme">Escuela Finca 2</small>
                   </div>
@@ -572,7 +587,10 @@
               <center>
                 <div id="lottie-container-exp"></div>
               </center>
-              <h2 class="fg-dark">Experiencia</h2>
+              <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg">
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;"><strong>Experiencia</strong></h3>
+          </div>
               <ul class="timeline mt-4 pr-md-5">
                 <!-- <li>
                 <div class="title">2017 - Current</div>
@@ -583,10 +601,10 @@
                 </div>
               </li>-->
                 <li>
-                  <div class="title" style="background-color: #20214f">
+                  <div class="title" style="background-color: black">
                     Actualmente
                   </div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Proyectos personales y trabajos freelancer</h5>
                     <small class="fg-theme"></small>
                     <p>Diseños, prácticas</p>
@@ -594,7 +612,7 @@
                 </li>
                 <li>
                   <div class="title" style="">Agos - Nov 2023</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5><a href="https://tilopay.com/">Tilopay</a></h5>
                     <small class="fg-theme"></small>
                     <p>Desarrollador Backend, pasantía</p>
@@ -602,7 +620,7 @@
                 </li>
                 <li>
                   <div class="title">(2013) / (2015–2019) / (2021–2023)</div>
-                  <div class="details">
+                  <div class="details" style="border: 2px solid black; background-color: white; border-radius: 0px">
                     <h5>Proyectos universitarios</h5>
                     <small class="fg-theme">Universidad Nacional</small>
 
@@ -658,8 +676,8 @@
       <!-- End page about -->
       <hr />
       <!-- Portfolio page -->
-      <div class="vg-page page-portfolio" id="portfolio">
-        <div class="container">
+      <div class="vg-page page-portfolio wow fadeInLeft" id="portfolio" style="background-color: white;">
+        <div class="container" style="border: 2px solid black;">
           <center>
             <div id="lottie-container-proj"></div>
           </center>
@@ -667,58 +685,61 @@
           <div class="badge badge-subhead">Portfolio</div>
         </div> -->
 
-          <h1 class="text-center fw-normal wow fadeInUp">Algunos proyectos</h1>
+           <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg">
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;">Proyectos</h3>
+          </div>
           <div
             class="filterable-button py-3 wow fadeInUp"
-            data-toggle="selected"
+            data-toggle="selected" 
           >
-            <button class="btn btn-theme-outline selected" data-filter="*">
+            <button class="btn btn-theme-outline selected" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem" data-filter="*">
               Todos
             </button>
-            <button class="btn btn-theme-outline" data-filter=".educacion">
+            <button class="btn btn-theme-outline" data-filter=".educacion" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem">
               Educación
             </button>
-            <button class="btn btn-theme-outline" data-filter=".recursos">
+            <button class="btn btn-theme-outline" data-filter=".recursos" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem">
               Recursos
             </button>
-            <button class="btn btn-theme-outline" data-filter=".tienda">
+            <button class="btn btn-theme-outline" data-filter=".tienda" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem">
               Tienda
             </button>
             <button
               class="btn btn-theme-outline"
-              data-filter=".entretenimiento"
+              data-filter=".entretenimiento" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
             >
               Entretenimiento
             </button>
-            <button class="btn btn-theme-outline" data-filter=".sitios">
+            <button class="btn btn-theme-outline" data-filter=".sitios" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem">
               Sitios web
             </button>
           </div>
 
-          <div class="gridder my-3">
-            <div class="grid-item recursos wow zoomIn">
-              <div
+          <div class="gridder my-3" style="margin: 2rem">
+            <div class="grid-item recursos wow zoomIn" >
+              <div 
                 class="img-place"
                 data-src="assets/img/work/work-10.png"
                 data-fancybox
                 data-caption="<h5 class='fg-theme'>ConsoleApp</h5> <p>Recursos</p>"
               >
                 <img src="assets/img/work/work-10.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">ConsoleApp</h5>
-                  <p>Recursos</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;" >ConsoleApp</h5>
+                  <p style="color: black;">Recursos</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn "
                   href="https://axelandrade21.github.io/web/consoletoolbox/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 3px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong> </a
                 >
               </center>
             </div>
-            <div class="grid-item educacion wireframes wow zoomIn">
+            <div class="grid-item educacion wireframes wow zoomIn" >
               <div
                 class="img-place"
                 data-src="assets/img/work/work-11.png"
@@ -726,17 +747,17 @@
                 data-caption="<h5 class='fg-theme'>Ingeniería en Sistemas</h5> <p>Educación, Aprendizaje</p>"
               >
                 <img src="assets/img/work/work-11.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Ingeniería en Sistemas</h5>
-                  <p>Educación, Aprendizaje</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Ingeniería en Sistemas</h5>
+                  <p style="color: black;">Educación, Aprendizaje</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/pingenieria/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 3px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -749,17 +770,17 @@
                 data-caption="<h5 class='fg-theme'>Guía GIT</h5> <p>Educación, Aprendizaje</p>"
               >
                 <img src="assets/img/work/work-2.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Guía GIT</h5>
-                  <p>Educación, Aprendizaje</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme text-center" style="color: black;">Guía GIT</h5>
+                  <p style="color: black;">Educación, Aprendizaje</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/guiagit/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 3px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -771,17 +792,17 @@
                 data-caption="<h5 class='fg-theme'>Carrito de compras</h5> <p>Tienda, Ecommerce</p>"
               >
                 <img src="assets/img/work/work-3.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Carrito de compras</h5>
-                  <p>Tienda, Ecommerce</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Carrito de compras</h5>
+                  <p style="color: black;">Tienda, Ecommerce</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/shoppingcart/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 3px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -793,17 +814,17 @@
                 data-caption="<h5 class='fg-theme'>Productos</h5> <p>Catálogo</p>"
               >
                 <img src="assets/img/work/work-4.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Catálogos de productos</h5>
-                  <p>Tienda</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Catálogos de productos</h5>
+                  <p style="color: black;">Tienda</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/productshop/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 3px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -815,17 +836,17 @@
                 data-caption="<h5 class='fg-theme'>Reproductor</h5> <p>Educación, Aprendizaje</p>"
               >
                 <img src="assets/img/work/work-5.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Reproductor de sílabas</h5>
-                  <p>Educación, Aprendizaje</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Reproductor de sílabas</h5>
+                  <p style="color: black;">Educación, Aprendizaje</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/silabas/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -837,17 +858,17 @@
                 data-caption="<h5 class='fg-theme'>Lista enlazada simple</h5> <p>Educación, Aprendizaje</p>"
               >
                 <img src="assets/img/work/12.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Lista enlazada simple</h5>
-                  <p>Educación, Aprendizaje</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Lista enlazada simple</h5>
+                  <p style="color: black;">Educación, Aprendizaje</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/datastructures/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -859,17 +880,17 @@
                 data-caption="<h5 class='fg-theme'>Guía de consonantes y vocales</h5> <p>Educación, Aprendizaje</p>"
               >
                 <img src="assets/img/work/work-6.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Consonantes y vocales coreanas</h5>
-                  <p>Educación, Aprendizaje</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Consonantes y vocales coreanas</h5>
+                  <p style="color: black;">Educación, Aprendizaje</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/vc/vocales.html"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -881,17 +902,17 @@
                 data-caption="<h5 class='fg-theme'>One piece Map</h5> <p>Mapas</p>"
               >
                 <img src="assets/img/work/work-7.jpeg" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">One piece Map</h5>
-                  <p>Mapas, recreación</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">One piece Map</h5>
+                  <p style="color: black;">Mapas, recreación</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/onepiecemap/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank"  style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -903,17 +924,17 @@
                 data-caption="<h5 class='fg-theme'>Sitio Web Cursos</h5> <p></p>"
               >
                 <img src="assets/img/work/work-8.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Sitio Web Cursos</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme"  style="color: black;">Sitio Web Cursos</h5>
+                  <p  style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/sitiocursos/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank"  style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -925,17 +946,17 @@
                 data-caption="<h5 class='fg-theme'>Netflix Login</h5> <p></p>"
               >
                 <img src="assets/img/work/work-9.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Netflix Login</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Netflix Login</h5>
+                  <p style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/netflix/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -948,17 +969,17 @@
                 data-caption="<h5 class='fg-theme'>Pokedex API</h5> <p></p>"
               >
                 <img src="assets/img/work/work-12.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Pokedex API</h5>
-                  <p>Entretenimiento</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Pokedex API</h5>
+                  <p style="color: black;">Entretenimiento</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/pokedex"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -971,17 +992,17 @@
                 data-caption="<h5 class='fg-theme'>Emovere - Psicoeducación</h5> <p></p>"
               >
                 <img src="assets/img/work/work-13.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Emovere - Psicoeducación</h5>
-                  <p>Educación</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Emovere - Psicoeducación</h5>
+                  <p style="color: black;">Educación</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://axelandrade21.github.io/web/emovere"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -993,17 +1014,17 @@
                 data-caption="<h5 class='fg-theme'>Sistema de órdenes</h5> <p></p>"
               >
                 <img src="assets/img/work/work-14.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Sistema de órdenes</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Sistema de órdenes</h5>
+                  <p style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
-                  href="https://unaproyectos-ordenes.000webhostapp.com/ordenes/view/frontend/index.php?pagina=1"
+                  class="btn"
+                  href="https://unaproyectos-ordenes.000webhostapp.com/ordenes/view/frontend/index.php?pagina=1" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
                   target="_blank"
-                  >Ver proyecto</a
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -1015,21 +1036,21 @@
                 data-caption="<h5 class='fg-theme'>Buscador - CaByS</h5> <p></p>"
               >
                 <img src="assets/img/work/work-15.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Buscador web - CaByS</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Buscador web - CaByS</h5>
+                  <p style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
-                  href="https://cabys-aav.netlify.app/"
+                  class="btn"
+                  href="https://cabys-aav.netlify.app/" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
                   target="_blank"
-                  >Ver proyecto</a
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
-            <div class="grid-item sitios ui-ux wow zoomIn">
+            <div class="grid-item sitios ui-ux wow zoomIn" >
               <div
                 class="img-place"
                 data-src="assets/img/work/work-16.png"
@@ -1037,17 +1058,17 @@
                 data-caption="<h5 class='fg-theme'>Formulario de registro</h5> <p></p>"
               >
                 <img src="assets/img/work/work-16.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">Formulario de registro</h5>
-                  <p>Sitios</p>
+                <div class="img-caption"  style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">Formulario de registro</h5>
+                  <p style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
-                  href="https://register-form-rjs.netlify.app/"
+                  class="btn"
+                  href="https://register-form-rjs.netlify.app/" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
                   target="_blank"
-                  >Ver proyecto</a
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -1059,17 +1080,17 @@
                 data-caption="<h5 class='fg-theme'>MangaStore</h5> <p></p>"
               >
                 <img src="assets/img/work/work-17.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">MangaStore</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme"  style="color: black;">MangaStore</h5>
+                  <p  style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
-                  href="https://manga-store-aav.netlify.app/"
+                  class="btn"
+                  href="https://manga-store-aav.netlify.app/" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
                   target="_blank"
-                  >Ver proyecto</a
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -1081,17 +1102,17 @@
                 data-caption="<h5 class='fg-theme'>AnimeReviews</h5> <p></p>"
               >
                 <img src="assets/img/work/work-18.png" alt="" />
-                <div class="img-caption">
-                  <h5 class="fg-theme">AnimeReviews</h5>
-                  <p>Sitios</p>
+                <div class="img-caption" style="background-color: white; border-left: 2px solid black; border-right: 2px solid black;border-bottom: 2px solid black;">
+                  <h5 class="fg-theme" style="color: black;">AnimeReviews</h5>
+                  <p style="color: black;">Sitios</p>
                 </div>
               </div>
               <center>
                 <a
-                  class="btn btn-theme btn-rounded"
+                  class="btn"
                   href="https://anime-reviews-aav.netlify.app/"
-                  target="_blank"
-                  >Ver proyecto</a
+                  target="_blank" style="background-color: white; color: black; border-radius: 0px; border: 1.4px solid black; margin-top: 1rem"
+                  ><strong>Ver proyecto</strong></a
                 >
               </center>
             </div>
@@ -1102,8 +1123,12 @@
       <!-- End Portfolio page -->
 
       <!-- Footer -->
-      <div class="vg-footer" id="redes">
-        <h1 class="text-center">Contáctame</h1>
+      <div class="vg-footer wow fadeInUp" id="redes" style="background-color: white; border-top: 2px solid black;">
+        <!-- <h1 class="text-center">Contáctame</h1> -->
+         <div class="d-flex justify-content-center wow flip" style="position: relative;">
+              <img src="assets/svg/title.svg">
+              <h3 class="text-center fg-dark" style="position: absolute; top: 43%; font-size: 20px; color: black; font-weight: 3rem;">Contáctame</h3>
+          </div>
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-sm-6 col-md-6 col-lg-3 py-1">
